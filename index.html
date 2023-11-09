@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/base/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Планер - двери-купе</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#" class="header__logo">
+                        <img src="./images/header/logo.svg" alt="logo">
+                    </a>
+                    <a href="#" class="header__address">
+                        г. Санкт-Петербург, пр. Елизарова, <br>
+                        дом 34/2 (лит.Л), 3 этаж, офис 346
+                    </a>
+                    <ul class="contacts-list">
+                        <li><a href="#" class="contacts-list__link">
+                                <img src="./images/header/telegram.svg" alt="icon">
+                                <span class="contacts-list__mobile-hide">Telegram</span></a></li>
+                        <li><a href="#" class="contacts-list__link">
+                                <img src="./images/header/watsap.svg" alt="icon">
+                                <span class="contacts-list__mobile-hide">Whatsapp</span></a></li>
+                        <li><a href="tel:+78123469043" class="contacts-list__link">
+                                <img src="./images/header/phone.svg" alt="icon">
+                                <span class="contacts-list__mobile-hide phone-blue">+7 (812) 346 90 43</span>
+                            </a></li>
+                    </ul>
+
+                    <button class="header__btn">Обратный звонок</button>
+                </div>
+            </div>
+            <!-- --------------------mobile block------------------ -->
+
+            <div class="header-mobile box-nav-fixed">
+                <div class="container">
+                    <nav class="box-nav-fixed__nav">
+                        <a href="#">
+                            <img src="./images/header/mobil/home.svg" alt="home">
+                            Главная
+                        </a>
+                        <a href="#">
+                            <img src="./images/header/mobil/calc.svg" alt="calc">
+                            Калькулятор
+                        </a>
+                        <a href="#">
+                            <img src="./images/header/mobil/baggage.svg" alt="projects">
+                            Проекты
+                        </a>
+                        <a href="#">
+                            <img src="./images/header/mobil/location.svg" alt="contacts">
+                            Контакты
+                        </a>
+                    </nav>
+                    <div class="box-nav-fixed__address">
+                        <a href="#">двери-купе.рф</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="introduction">
+                <div class="intro__container">
+                    <div class="intro__inner">
+                        <!-- start inner -->
+                        <article class="intro__col-content">
+                            <div class="intro__box-titles">
+                                <a href="#" class="intro__title-h3">
+                                    <h3 data-title3="closet">Шкафы купе</h3>
+                                </a>
+                                <a href="#" class="intro__title-h3">
+                                    <h3 data-title3="slidin-door">Раздвижные двери</h3>
+                                </a>
+                                <a href="#" class="intro__title-h3">
+                                    <h3 data-title3="partition">
+                                        Межкомнатные <br>
+                                        перегородки
+                                    </h3>
+                                </a>
+                            </div>
+                            <p class="intro__text">
+                                от производителя <br> в Санкт-Петербурге
+                            </p>
+                            <button type="button" class="intro__btn-send price-calculation">Расчет за 3 минуты</button>
+                        </article>
+                        <!-- card -->
+                        <div class="intro__col-product">
+                            <div class=" intro__inner-col1">
+                                <div data-card="closet" class="intro__box-product col1">
+                                    <img src="./images/closet.png" alt="image">
+                                    <div class="intro__box-discr">
+                                        <h4 class="intro__title-h4">
+                                            ШКАФЫ КУПЕ
+                                            <span>ВСТРОЕННЫЕ</span>
+                                        </h4>
+                                        <p class="intro__price">
+                                            <span>от</span>
+                                            8.000 ₽
+                                        </p>
+                                        <a href="#" class="intro__project-link">Проекты</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="intro__calculation">
+                                    <img src="./images/intro/calc.svg" alt="calc">
+                                    <h4 class="intro__calc-title">
+                                        КАЛЬКУЛЯТОР
+                                        <span>дверей-купе</span>
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class=" intro__inner-col2">
+                                <div data-card="slidin-door" class="intro__box-product col2">
+                                    <img src="./images/sliding-door.png" alt="image">
+                                    <div class="intro__box-discr">
+                                        <h4 class="intro__title-h4">
+                                            ДВЕРИ
+                                            <span>РАЗДВИЖНЫЕ</span>
+                                        </h4>
+                                        <p class="intro__price">
+                                            <span>от</span>
+                                            12.000 ₽
+                                        </p>
+                                        <a href="#" class="intro__project-link">Проекты</a>
+                                    </div>
+                                </div>
+                                <div data-card="partition" class="intro__box-product col2">
+                                    <img src="./images/partition.png" alt="image">
+                                    <div class="intro__box-discr">
+                                        <h4 class="intro__title-h4">
+                                            ПЕРЕГОРОДКИ
+                                            <span>МЕЖКОМНАТНЫЕ</span>
+                                        </h4>
+                                        <p class="intro__price">
+                                            <span>от</span>
+                                            16.000 ₽
+                                        </p>
+                                        <a href="#" class="intro__project-link">Проекты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end inner -->
+                    </div>
+                </div>
+                <!-- --------------------mobile block------------------ -->
+
+                <div class="introduction-mobile">
+                    <img src=".//images/intro/mobil/mob-intro-bd.png" alt="background" class="introduction-mobile__bd">
+                    <div class="container intro-mobile__layer">
+                        <div class="intro-mobile__inner">
+                            <h1 class="intro-mobile__title-h1">
+                                Двери купе <br>и перегородки
+                            </h1>
+                            <p class="intro-mobile__subtitle">
+                                от производителя <br>в Санкт-Петербурге
+                            </p>
+                            <ul class="intro-mobile__list">
+                                <li class="intro-mobile__item">офис без выходных</li>
+                                <li class="intro-mobile__item">монтаж в день доставки</li>
+                                <li class="intro-mobile__item">изготовление от 2-5 дней</li>
+                                <li class="intro-mobile__item">отзывы на Яндекс ⭐️ 4.9</li>
+                            </ul>
+                            <button class="intro-mobile__btn-calcul price-calculation">
+                                Расчет за 3 минуты*
+                            </button>
+                            <p class="intro-mobile__text">* В рабочее время</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class=" container none">
+                    <ul class="intro__list">
+                        <li class="intro__item">
+                            <img src="./images/intro/triangle.svg" alt="triangle">
+                            <p>Выезд замерщика <br> в течение 1 дня</p>
+                        </li>
+                        <li class="intro__item">
+                            <img src="./images/intro/gear.svg" alt="gear">
+                            <p>Изготовление 1-5 дней</p>
+                        </li>
+                        <li class="intro__item">
+                            <img src="./images/intro/wrench.svg" alt="wrench">
+                            <p>Тонированные <br> зеркала и стекла</p>
+                        </li>
+                        <li class="intro__item">
+                            <img src="./images/intro/check.svg" alt="check">
+                            <p>Окраска по каталогу</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <h2 class="title-h2"></h2>
+
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/order-call.js"></script>
+    <script src="./js/price-calc-popup.js"></script>
+    <script src="./js/intro.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

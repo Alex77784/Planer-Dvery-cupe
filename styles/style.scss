@@ -1,0 +1,23 @@
+@import './base/_fonts';
+@import './base/_vars';
+@import './base/_base';
+@import './base/_placeholders';
+@import './base/_mixins';
+@import './blocks/popup/_popup';
+@import './blocks/popup/_price-calc-popup';
+//------------------------------
+@import './blocks/header/_header';
+@import './blocks/header/_header-mobile';
+
+
+@import './blocks/introduction/_col-descr';
+@import './blocks/introduction/_col-product';
+@import './blocks/introduction/_intro-mobile';
+
+@import './blocks/calc-slid-door/_advantages';
+
+@import './blocks/footer/_footer';
+
+.none {
+    display: none;
+}

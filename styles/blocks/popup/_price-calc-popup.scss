@@ -1,0 +1,315 @@
+.price-calc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__bd-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 101;
+
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &__window-bd {
+        position: relative;
+        top: -1000px;
+        z-index: 102;
+        transition: $transition;
+
+        width: 60.3%;
+        height: 57vh;
+
+        margin: 15px;
+        border-radius: 20px;
+        overflow: hidden;
+
+        &>img {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        @media (max-width:1440px) {
+            & {
+                width: 70%;
+            }
+        }
+
+        @include media-width1180 {
+            width: 85%;
+        }
+
+        @include media-width992 {
+            width: 100%;
+        }
+
+        @include media-width767 {
+            height: 465px;
+        }
+    }
+
+    &__layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 103;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 40px;
+
+        @include media-width992 {
+            padding: 25px 30px;
+            overflow: auto;
+        }
+
+        @include media-width767 {
+            padding: 60px 30px;
+        }
+
+        @media (max-width:375px) {
+            overflow: hidden;
+        }
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background: transparent;
+        transition: $transition;
+
+        &:hover {
+            transform: rotate(90deg) scale(1.1);
+        }
+
+        @include media-width570 {
+            top: 15px;
+            right: 15px;
+        }
+    }
+
+    &__title {
+        color: $main-blue;
+        text-align: center;
+        @include adaptive-font(24, 36, 1520);
+        font-weight: 600;
+        letter-spacing: -0.36px;
+        margin-bottom: 40px;
+
+        @include media-width992 {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__box-column {
+        display: flex;
+        gap: 40px;
+
+        @include media-width767 {
+            flex-direction: column-reverse;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        @media (max-width:375px) {}
+    }
+
+    &__text1 {
+        color: $main-blue;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 500;
+        margin-bottom: 20px;
+
+        &>span {
+            color: $main-red;
+        }
+
+        &>strong {
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        @include media-width767 {
+            text-align: center;
+        }
+
+        @media (max-width:425px) {
+            text-align: left;
+        }
+
+        @media (max-width:375px) {
+            display: none;
+        }
+    }
+
+    &__text2 {
+        color: $main-black;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+
+        @include media-width992 {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: left;
+
+        @include media-width767 {
+            margin-left: 20%;
+        }
+
+        @media (max-width:425px) {
+            margin-left: 0%;
+        }
+
+        @media (max-width:375px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        position: relative;
+        color: $main-black;
+        font-size: 18px;
+        line-height: 1.5;
+        padding-left: 25px;
+
+        &::before {
+            content: url('.././images/intro/mobil/check.svg');
+            position: absolute;
+            top: 4px;
+            left: 0;
+        }
+    }
+
+    &__col2>form {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+
+        @media (max-width:1440px) {
+            & {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width:425px) {
+            width: 100%;
+        }
+    }
+
+    &__label {
+        color: #373E46;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+    &__input {
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.60);
+        background: $white;
+        padding: 16px 20px;
+        font-size: 20px;
+
+        &:focus {
+            box-shadow: inset 0 0 4px 0px rgba(0, 0, 0, 0.60);
+        }
+
+        &::placeholder {
+            font-size: 20px;
+        }
+
+        @include media-width767 {
+            padding: 10px 15px;
+        }
+    }
+
+    &__btn-send-app {
+        padding: 24px 60px;
+        border-radius: 12px;
+        background-color: $main-red;
+
+        color: $white;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        transition: $transition;
+
+        &:hover {
+            background-color: $red-hov;
+        }
+
+        &:active {
+            background-color: $red-act;
+        }
+
+        @include media-width767 {
+            padding: 0px;
+            line-height: 3.5;
+            margin: 0 auto 12px;
+            width: 85%;
+            font-size: 18px;
+        }
+    }
+
+    &__work-time {
+        color: #A1A1A1;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.i1 {
+    margin-bottom: 32px;
+
+    @include media-width767 {
+        margin-bottom: 20px;
+    }
+}
+
+.i2 {
+    margin-bottom: 20px;
+}
+
+// add class active modal window .price-calc
+
+.price-calc.active .price-calc__window-bd {
+    top: 0;
+}
+
+.price-calc.active .sent-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 150px;
+    font-size: 35px;
+    color: $white;
+
+    background-color: $main-blue;
+    box-shadow: 0 0 20px 10px #FFF;
+
+    @include media-width767 {
+        font-size: 24px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,40 @@
+@mixin adaptive-font($mblSize, $mktSize, $cntrSize: 1230) {
+    $difference: $mktSize - $mblSize;
+    $addMobSize: $difference * 2 * 0.7;
+
+    font-size: calc(#{$mblSize + px} + #{$difference} * (100vw / #{$cntrSize}));
+
+    @media (max-width:767px) {
+        font-size: calc(#{$mblSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$cntrSize}));
+    }
+}
+
+@mixin media-width1180 {
+    @media (max-width: 1180px) {
+        @content;
+    }
+}
+
+@mixin media-width992 {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin media-width767 {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-width570 {
+    @media (max-width: 570px) {
+        @content;
+    }
+}
+
+@mixin media-width425 {
+    @media (max-width: 425px) {
+        @content;
+    }
+}

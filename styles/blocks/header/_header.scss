@@ -1,0 +1,114 @@
+.header {
+    background-color: $white;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+
+        min-height: 112px;
+    }
+
+    &__logo {
+        @include media-width767 {
+            & {
+                width: 125px;
+            }
+
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__address {
+        color: $main-black;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0 3%;
+        transition: $transition;
+
+        &:hover {
+            text-shadow: 1px 1px 1px $main-black;
+        }
+
+        @media (max-width: 1490px) {
+            & {
+                display: none;
+            }
+        }
+    }
+
+    &__btn {
+        border-radius: 12px;
+        background: $main-red;
+        box-shadow: 0px 4px 8px 0px rgba(71, 3, 17, 0.10);
+
+        color: $white;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+
+        padding: 20px 32px;
+        transition: $transition;
+
+        &:hover {
+            background-color: $red-hov;
+        }
+
+        &:active {
+            background-color: $red-act;
+        }
+
+        @include media-width767 {
+            & {
+                display: none;
+            }
+        }
+    }
+}
+
+.contacts-list {
+    display: flex;
+    gap: 10px 40px;
+    margin-left: auto;
+    margin-right: 20px;
+
+    @include media-width767 {
+        & {
+            gap: 0 20px;
+            margin-right: 0;
+
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+
+        &:hover {
+
+            &>img {
+                transition: $transition;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__mobile-hide {
+        font-size: 20px;
+        font-weight: 500;
+        color: #212121;
+
+        @include media-width1180 {
+            & {
+                display: none;
+            }
+        }
+    }
+}
+
+.phone-blue {
+    color: $main-blue;
+}

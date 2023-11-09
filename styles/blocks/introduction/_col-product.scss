@@ -1,0 +1,214 @@
+.intro {
+    &__col-product {
+        display: flex;
+        gap: 0 30px;
+    }
+
+    &__inner-col1,
+    &__inner-col2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__inner-col2 {
+        @include media-width1180 {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        @include media-width767 {
+            flex-direction: column;
+        }
+    }
+
+    &__box-product {
+        position: relative;
+
+        overflow: hidden;
+        border-radius: 12px;
+        transition: all 0.4s ease-out;
+
+        &.col1 {
+            height: 440px;
+        }
+
+        &.col2 {
+            height: 275px;
+        }
+
+        &.col2 {
+            height: 275px;
+        }
+
+        &:hover img,
+        &.hover img {
+            transform: scale(1.1);
+        }
+
+        &:hover,
+        &.hover {
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10),
+                8px 8px 0px 0px rgba(230, 25, 70, 0.50);
+        }
+
+    }
+
+    &__box-product>img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease-in;
+    }
+
+    &__box-discr {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        padding: 32px;
+
+        border-radius: 12px;
+        overflow: hidden;
+
+        background: rgba(50, 50, 53, 0.7);
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+        transition: all 0.4s ease-out;
+
+
+        @include media-width992 {
+            padding: 22px;
+        }
+
+        &:hover,
+        &.hover {
+            background: transparent;
+
+        }
+
+        &:hover .intro__project-link,
+        &.hover .intro__project-link {
+            background-size: 100% 2px;
+        }
+
+        &:hover .intro__price,
+        &.hover .intro__price {
+            transform: translateX(0);
+        }
+    }
+
+    &__title-h4 {
+        color: $white;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin-bottom: 15px;
+
+        @media (max-width: 1420px) {
+            & {
+                font-size: 24px;
+            }
+        }
+
+        &>span {
+            display: block;
+            font-size: 22px;
+            font-weight: 500;
+
+            @media (max-width: 1420px) {
+                & {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    &__price {
+        color: $white;
+        font-size: 28px;
+        font-weight: 600;
+
+        transition: transform 0.4s ease-out;
+        transform: translateX(-100%);
+
+        @media (max-width: 1420px) {
+            & {
+                font-size: 22px;
+            }
+        }
+
+        &>span {
+            font-size: 16px;
+
+        }
+    }
+
+    &__project-link {
+        position: absolute;
+        right: 32px;
+        bottom: 32px;
+
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+
+        background: linear-gradient(to left, $main-red, $main-red 100%) no-repeat;
+        background-position: 100% 100%;
+        background-size: 50% 2px;
+
+        padding-bottom: 5px;
+        transition: all 0.3s linear;
+    }
+
+    &__calculation {
+        display: flex;
+        align-items: center;
+
+        height: 108px;
+        padding: 24px 32px;
+
+        border-radius: 12px;
+        border: 2px solid $main-blue;
+        background: #F8F8F8;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        transition: $transition;
+
+        @include media-width1180 {
+            width: 400px;
+        }
+
+        @include media-width767 {
+            padding: 15px 32px;
+            width: 350px;
+        }
+
+        &:hover {
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &__calc-title {
+        color: $main-blue;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-left: 20px;
+
+        &>span {
+            display: block;
+            font-size: 22px;
+        }
+
+        @include media-width992 {
+            & {
+                font-size: 24px;
+
+                &>span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

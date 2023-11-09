@@ -1,0 +1,203 @@
+.introduction {
+    padding: 99px 0;
+
+    @media (max-width: 1420px) {
+        & {
+            padding: 60px 0;
+        }
+    }
+
+    @include media-width1180 {
+        padding: 40px 0;
+    }
+
+    @include media-width767 {
+        padding: 30px 0;
+    }
+
+    @include media-width425 {
+        padding: 0;
+    }
+}
+
+.intro {
+    &__container {
+        width: 100%;
+        max-width: 1550px;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        @include media-width1180 {
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+            gap: 30px;
+            justify-items: center;
+        }
+
+        @include media-width425 {
+            display: none;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 470px minmax(740px, 1fr);
+        gap: 0 155px;
+
+        @media (max-width: 1420px) {
+            & {
+                grid-template-columns: 370px minmax(700px, 1fr);
+                gap: 0 55px;
+            }
+        }
+
+        @include media-width1180 {
+            grid-template-columns: 370px minmax(400px, 460px);
+            justify-content: center;
+            gap: 0 110px;
+            width: 100%;
+        }
+
+        @include media-width992 {
+            grid-template-columns: minmax(350px, 1fr) minmax(340px, 460px);
+            gap: 0 30px;
+        }
+
+        @include media-width767 {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 30px;
+        }
+
+    }
+
+    &__col-content {
+        display: flex;
+        flex-direction: column;
+        gap: 60px 0;
+        padding-left: 40px;
+
+        @include media-width1180 {
+            padding-left: 25px;
+            gap: 40px 0;
+        }
+
+        @include media-width992 {
+            gap: 55px 0;
+        }
+
+        @include media-width767 {
+            padding-left: 0;
+        }
+    }
+
+    &__box-titles {
+        margin: 20px 0 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px 0;
+    }
+
+    &__title-h3 {
+        position: relative;
+        color: $main-blue;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.2;
+        transition: color 0.4s ease-out;
+
+        @media (max-width: 1420px) {
+            & {
+                font-size: 28px;
+            }
+        }
+
+        @include media-width992 {
+            font-size: 24px;
+        }
+
+        &:hover,
+        &.hover {
+            color: $main-red;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -35px;
+
+            display: block;
+            height: 2px;
+            width: 20px;
+            background-color: $main-red;
+
+            @media (max-width: 1420px) {
+                & {
+                    top: 15px;
+                }
+            }
+
+            @include media-width992 {
+                left: -25px;
+                width: 15px;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.5;
+
+        @media (max-width: 1420px) {
+            & {
+                font-size: 24px;
+            }
+        }
+
+        @include media-width992 {
+            font-size: 22px;
+        }
+    }
+
+    &__btn-send {
+        padding: 30px 0px;
+        width: 430px;
+
+        border-radius: 12px;
+        background: $main-red;
+        box-shadow: 0px 4px 8px 0px rgba(71, 3, 17, 0.10);
+
+        color: #FFF;
+        text-align: center;
+
+        font-size: 24px;
+        font-weight: 500;
+        transition: $transition;
+
+
+        @media (max-width: 1420px) {
+            & {
+                width: 330px;
+            }
+        }
+
+        @include media-width767 {
+            & {
+                width: 350px;
+            }
+        }
+
+        &:hover {
+            background-color: $red-hov;
+        }
+
+        &:active {
+            background-color: $red-act;
+        }
+    }
+}

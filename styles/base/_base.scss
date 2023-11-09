@@ -1,0 +1,22 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: #F8F8F8;
+    color: $main-black;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title-h2 {
+    font-size: 25px;
+    color: rgb(231, 158, 62);
+}
