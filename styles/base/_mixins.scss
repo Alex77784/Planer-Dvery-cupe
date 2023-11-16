@@ -1,4 +1,4 @@
-@mixin adaptive-font($mblSize, $mktSize, $cntrSize: 1230) {
+@mixin adaptive-font($mblSize, $mktSize, $cntrSize: 1520) {
     $difference: $mktSize - $mblSize;
     $addMobSize: $difference * 2 * 0.7;
 
@@ -23,6 +23,12 @@
 
 @mixin media-width767 {
     @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-width650 {
+    @media (max-width: 650px) {
         @content;
     }
 }

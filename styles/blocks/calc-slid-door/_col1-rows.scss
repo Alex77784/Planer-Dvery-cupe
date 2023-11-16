@@ -1,0 +1,70 @@
+.col1-rows {
+    &__measurement {
+        display: flex;
+        gap: 40px;
+        margin: 40px 0 32px;
+
+        @include media-width650 {
+            margin: 20px 0 32px;
+            justify-content: space-evenly;
+            gap: 20px
+        }
+    }
+
+    &__quantity-doors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        text-align: end;
+
+        @include media-width650 {
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    &__price {
+        color: $main-red;
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__leave-apln {
+        padding: 24px 0;
+        width: 100%;
+
+        border-radius: 12px;
+        background: $main-red;
+        box-shadow: 0px 4px 8px 0px rgba(71, 3, 17, 0.10);
+
+        color: $white;
+        font-size: 24px;
+        font-weight: 500;
+        transition: $transition;
+
+        @include media-width650 {
+            width: 315px;
+        }
+
+        @include media-width425 {
+            width: 290px;
+        }
+
+        &:hover {
+            background-color: $red-hov;
+        }
+
+        &:active {
+            background-color: $red-act;
+        }
+    }
+}
+
+.a,
+.b {
+    text-align: end;
+    color: red;
+}

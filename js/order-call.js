@@ -1,5 +1,6 @@
 let popup = `
-<div class="bd-popup">
+<div class="order-call">
+    <div class="bd-close"></div>
     <div class="popup-window">
         <button class="btn-close">
             <img src="./images/popup/btn-close.svg" alt="close">
@@ -20,20 +21,23 @@ let popup = `
 </div>`;
 
 //--------------popup
-let backCallBtn = document.querySelector('.header__btn');//--------------------btn call script
-let placeInsertDocument = document.querySelector('.header__inner');// ---------connect in document
+let backCallBtn = document.querySelectorAll('[data-modal]');//--------------------btn call script
+let placeInsertDocument = document.querySelector('.wrapper');// ---------connect in document
 
-backCallBtn.addEventListener('click', popupBackCall);
+for (let elem of backCallBtn) {
+    elem.addEventListener('click', popupBackCall);
+}
 function popupBackCall() {
     placeInsertDocument.insertAdjacentHTML('beforeEnd', popup);// -------------connect in document
-    let bdPopup = document.querySelector('.bd-popup');
+    let modalca = document.querySelector('.order-call');
     let windowPopup = document.querySelector('.popup-window');
     let btnClose = document.querySelector('.btn-close');
+    let bdClose = document.querySelector('.bd-close');
     let inputUser = document.querySelector('.name-area');
     let inputPhone = document.querySelector('.phone-area');
     let sendAppBtn = document.querySelector('.btn-send-app');
     let flagValidatePhone = false;
-    setTimeout(() => bdPopup.classList.add('active'), 100);
+    setTimeout(() => modalca.classList.add('active'), 100);
 
     // ----------
     let token = "6126020399:AAFXu7EJ5rBMRX_fOPcsT-mxKQa6jvujEaE";
@@ -60,8 +64,8 @@ function popupBackCall() {
             windowPopup.innerHTML = '';
             windowPopup.innerHTML = 'В скоре мы Вам пезвоним';
 
-            setTimeout(() => bdPopup.classList.remove('active'), 3900);
-            setTimeout(() => bdPopup.remove(), 4000);
+            setTimeout(() => modalca.classList.remove('active'), 3900);
+            setTimeout(() => modalca.remove(), 4000);
         }
     }
 
@@ -77,8 +81,12 @@ function popupBackCall() {
 
     // ----------
     btnClose.addEventListener('click', () => {
-        bdPopup.classList.remove('active');
-        setTimeout(() => bdPopup.remove(), 200);
+        modalca.classList.remove('active');
+        setTimeout(() => modalca.remove(), 200);
+    });
+    bdClose.addEventListener('click', () => {
+        modalca.classList.remove('active');
+        setTimeout(() => modalca.remove(), 200);
     });
 
     // -----------------------------------functions

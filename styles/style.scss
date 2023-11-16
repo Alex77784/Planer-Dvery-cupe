@@ -1,10 +1,11 @@
 @import './base/_fonts';
 @import './base/_vars';
-@import './base/_base';
-@import './base/_placeholders';
 @import './base/_mixins';
+@import './base/_placeholders';
+@import './base/_base';
 @import './blocks/popup/_popup';
 @import './blocks/popup/_price-calc-popup';
+@import './blocks/spoller/_spoller';
 //------------------------------
 @import './blocks/header/_header';
 @import './blocks/header/_header-mobile';
@@ -15,6 +16,10 @@
 @import './blocks/introduction/_intro-mobile';
 
 @import './blocks/calc-slid-door/_advantages';
+@import './blocks/calc-slid-door/_calc-slider-door';
+@import './blocks/calc-slid-door/_col1-rows';
+@import './blocks/calc-slid-door/_opening-size';
+@import './blocks/calc-slid-door/_quantity-doors';
 
 @import './blocks/footer/_footer';
 

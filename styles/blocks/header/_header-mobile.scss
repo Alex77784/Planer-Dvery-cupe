@@ -45,28 +45,4 @@
             }
         }
     }
-
-    &__address {
-        position: relative;
-        border-top: 0.5px solid rgba(60, 60, 67, 0.3);
-        background: rgba(255, 255, 255, 0.8);
-        padding: 10px 0;
-        text-align: center;
-
-        &::after {
-            content: '';
-            display: block;
-            width: 135px;
-            height: 5px;
-            margin: 12px auto 0;
-
-            background-color: #000;
-            border-radius: 20px;
-        }
-
-        &>a {
-            color: #000;
-            font-size: 12px;
-        }
-    }
 }

@@ -1,17 +1,28 @@
-.bd-popup {
+.order-call {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
 
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100vh;
     padding: 5px 15px;
+    width: 100%;
+    height: 100%;
+
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bd-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 .popup-window {
@@ -136,11 +147,11 @@
 }
 
 // --------------animation popup
-.bd-popup.active .popup-window {
+.order-call.active .popup-window {
     transform: translateY(0px);
 }
 
-.bd-popup.active .popup-window.sent-call {
+.order-call.active .popup-window.sent-call {
     font-size: 35px;
     color: $white;
     text-align: center;

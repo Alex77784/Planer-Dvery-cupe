@@ -1,0 +1,40 @@
+.quantity-doors {
+
+    &__text-doors {
+        color: #212121;
+        font-size: 22px;
+        line-height: 1.2;
+        margin-right: 12px;
+    }
+
+    &__select-doors {
+        display: flex;
+        border-radius: 8px;
+        border: 1px solid rgba(205, 205, 205, 0.60);
+        background: $white;
+
+        overflow: hidden;
+    }
+
+    &__door {
+        display: block;
+        padding: 16px 32px;
+        border: 1px solid rgba(205, 205, 205, 0.60);
+        cursor: pointer;
+
+        color: $main-black;
+        text-align: center;
+        font-size: 24px;
+        transition: all 0.3s linear;
+
+        &.active {
+            color: $white;
+            background-color: $main-blue;
+        }
+
+        &.hover {
+            color: $white;
+            background: #64ABC9;
+        }
+    }
+}

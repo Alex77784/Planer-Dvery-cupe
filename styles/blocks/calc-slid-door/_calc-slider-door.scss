@@ -1,0 +1,202 @@
+.calc-slider-door {
+
+    &__wrap {
+        padding: 70px 0;
+
+        @include media-width992 {
+            padding: 50px 0;
+        }
+
+        @include media-width650 {
+            padding: 30px 0;
+        }
+    }
+
+    &__wto-cols {
+        display: flex;
+        justify-content: space-between;
+        gap: 44px;
+        padding-right: 120px;
+        margin-bottom: 60px;
+
+        @include media-width1180 {
+            flex-direction: column;
+            align-items: center;
+            padding-right: 0;
+        }
+
+        @include media-width992 {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__col1 {
+        @include media-width650 {
+            align-self: stretch;
+            text-align: center;
+        }
+    }
+
+    &__col2 {
+        position: relative;
+    }
+
+    &__col2-row1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 528px;
+
+        @include media-width1180 {
+            margin-bottom: 25px;
+        }
+
+        @include media-width650 {
+            display: none;
+        }
+    }
+
+    &__cost-set {
+        margin: 40px 0 0;
+        width: 48%;
+
+        @include media-width1180 {
+            width: 100%;
+            padding-left: 22%;
+        }
+
+        @include media-width992 {
+            padding-left: 13%;
+        }
+
+        @include media-width767 {
+            padding-left: 5%;
+        }
+
+        @include media-width650 {
+            padding-left: 0;
+        }
+    }
+
+    &__items {
+        color: $main-black;
+        line-height: 1.7;
+
+        margin: 40px 0 50px;
+
+        @include media-width992 {
+            margin: 25px 0 35px;
+        }
+
+        @include media-width650 {
+            &>li:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__text {
+        color: #212121;
+
+        &>span {
+            font-weight: 500;
+        }
+    }
+}
+
+.doors {
+
+    &__col2-row2 {
+        display: flex;
+
+        border-top: 2px solid #CBD0CC;
+        border-bottom: 4px solid #CBD0CC;
+        padding-bottom: 3px;
+
+        position: absolute;
+        top: 140px;
+        left: 0;
+
+        background: url('.././images/calc-slider-door/closet-inner.jpg') center/cover no-repeat;
+
+        &:hover .d2 {
+            transform: translateX(-128px);
+
+            @include media-width650 {
+                transform: translateX(-72px);
+            }
+        }
+
+        &:hover .d3 {
+            transform: translateX(128px);
+
+            @include media-width650 {
+                transform: translateX(72px);
+            }
+        }
+
+
+        @include media-width1180 {
+            position: static;
+            width: 528px;
+        }
+
+        @include media-width650 {
+            width: 285px;
+            height: 250px;
+            padding-bottom: 1px;
+            border-top: 1px solid #CBD0CC;
+            border-bottom: 2px solid #CBD0CC;
+
+        }
+    }
+
+    &__door {
+        border: 2px solid #CBD0CC;
+        transition: transform 0.7s ease-in;
+        position: relative;
+
+        @include media-width650 {
+            width: 72px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &:nth-child(2).active {
+            transform: translateX(-128px);
+        }
+
+        &:nth-child(3).active {
+            transform: translateX(128px);
+        }
+
+        // =========
+        &:nth-child(1).move-right {
+            transform: translateX(384px);
+        }
+
+        &:nth-child(2).move-right {
+            transform: translateX(256px);
+        }
+
+        &:nth-child(3).move-right {
+            transform: translateX(128px);
+        }
+
+        // ==========
+        &:nth-child(4).move-left {
+            transform: translateX(-384px);
+        }
+
+        &:nth-child(3).move-left {
+            transform: translateX(-256px);
+        }
+
+        &:nth-child(2).move-left {
+            transform: translateX(-128px);
+        }
+    }
+}

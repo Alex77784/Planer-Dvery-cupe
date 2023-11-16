@@ -19,6 +19,7 @@
         z-index: 101;
 
         background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
     }
 
     &__window-bd {
@@ -28,7 +29,7 @@
         transition: $transition;
 
         width: 60.3%;
-        height: 57vh;
+        height: 95vh;
 
         margin: 15px;
         border-radius: 20px;

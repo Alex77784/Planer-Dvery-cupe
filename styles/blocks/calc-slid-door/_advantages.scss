@@ -1,5 +1,7 @@
-.intro {
-    &__list {
+.calc-slider-door {
+
+    &__list-part1,
+    &__list-part2 {
         display: flex;
 
         border-radius: 20px;
@@ -9,9 +11,20 @@
         @include media-width1180 {
             flex-wrap: wrap;
         }
+
+        @include media-width650 {
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        @include media-width425 {
+            display: none;
+        }
     }
 
-    &__item {
+    &__item-p1,
+    &__item-p2 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -32,19 +45,28 @@
 
         @include media-width767 {
             flex: 1 0 80%;
-            font-size: 22px;
             justify-content: stretch;
 
             padding: 20px 0;
             margin-left: 50px;
         }
 
-        @include media-width425 {
-            display: none;
-        }
-
         &>p {
             margin-left: 20px;
+        }
+    }
+
+    &__list-part2 {
+        @include media-width425 {
+            display: block;
+        }
+    }
+
+    &__item-p2 {
+        @include media-width425 {
+            margin-left: 0;
+            font-size: 18px;
+            line-height: 1.5;
         }
     }
 }

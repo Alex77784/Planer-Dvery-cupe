@@ -34,12 +34,10 @@
                                 <span class="contacts-list__mobile-hide phone-blue">+7 (812) 346 90 43</span>
                             </a></li>
                     </ul>
-
-                    <button class="header__btn">Обратный звонок</button>
+                    <button data-modal class="header__btn">Обратный звонок</button>
                 </div>
             </div>
             <!-- --------------------mobile block------------------ -->
-
             <div class="header-mobile box-nav-fixed">
                 <div class="container">
                     <nav class="box-nav-fixed__nav">
@@ -60,9 +58,6 @@
                             Контакты
                         </a>
                     </nav>
-                    <div class="box-nav-fixed__address">
-                        <a href="#">двери-купе.рф</a>
-                    </div>
                 </div>
             </div>
         </header>
@@ -151,7 +146,6 @@
                     </div>
                 </div>
                 <!-- --------------------mobile block------------------ -->
-
                 <div class="introduction-mobile">
                     <img src=".//images/intro/mobil/mob-intro-bd.png" alt="background" class="introduction-mobile__bd">
                     <div class="container intro-mobile__layer">
@@ -176,23 +170,178 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div class=" container none">
-                    <ul class="intro__list">
-                        <li class="intro__item">
-                            <img src="./images/intro/triangle.svg" alt="triangle">
+            <section class="calc-slider-door">
+                <div class="container">
+                    <ul class="calc-slider-door__list-part1">
+                        <li class="calc-slider-door__item-p1">
+                            <img src="./images/calc-slider-door/triangle.svg" alt="triangle">
                             <p>Выезд замерщика <br> в течение 1 дня</p>
                         </li>
-                        <li class="intro__item">
-                            <img src="./images/intro/gear.svg" alt="gear">
+                        <li class="calc-slider-door__item-p1">
+                            <img src="./images/calc-slider-door/gear.svg" alt="gear">
                             <p>Изготовление 1-5 дней</p>
                         </li>
-                        <li class="intro__item">
-                            <img src="./images/intro/wrench.svg" alt="wrench">
+                        <li class="calc-slider-door__item-p1">
+                            <img src="./images/calc-slider-door/wrench.svg" alt="wrench">
+                            <p>Монтаж в день <br> доставки</p>
+                        </li>
+                        <li class="calc-slider-door__item-p1">
+                            <img src="./images/calc-slider-door/check.svg" alt="check">
+                            <p>Реализовали более <br> 10 000 заказов</p>
+                        </li>
+                    </ul>
+                    <div class="calc-slider-door__wrap">
+                        <h2 class="title-h2 mb650">Калькулятор дверей-купе</h2>
+                        <div class="calc-slider-door__wto-cols">
+                            <div class="calc-slider-door__col1">
+                                <h3 class="title-h3 none650">Габариты проема</h3>
+                                <div class="col1-rows__measurement">
+                                    <div class="opening-size">
+                                        <div class="opening-size__desc-input-data">
+                                            <p class="opening-size__desc-size">
+                                                Высота
+                                                <span>проёма</span>
+                                            </p>
+                                            <input placeholder="2500" data-hieght-input
+                                                class="opening-size__data-reception" type="text">
+                                            <span>мм</span>
+                                        </div>
+                                        <!-- mobile -->
+                                        <div class="opening-size__desc-input-data-mobile">
+                                            <p class="opening-size__desc-size-mobile">
+                                                Высота
+                                                <span>проёма, мм</span>
+                                            </p>
+                                            <input placeholder="2500" data-hieght-input
+                                                class="opening-size__data-reception-mobile" type="text">
+                                        </div>
+                                        <p class="opening-size__range h">от 2045 до 3400</p>
+                                    </div>
+                                    <div class="opening-size">
+                                        <div class="opening-size__desc-input-data">
+                                            <p class="opening-size__desc-size">
+                                                Ширина
+                                                <span>проёма</span>
+                                            </p>
+                                            <input placeholder="3000" data-width-input
+                                                class="opening-size__data-reception" type="text">
+                                            <span>мм</span>
+                                        </div>
+                                        <!-- mobile -->
+                                        <div class="opening-size__desc-input-data-mobile">
+                                            <p class="opening-size__desc-size-mobile">
+                                                Ширина
+                                                <span>проёма, мм</span>
+                                            </p>
+                                            <input placeholder="3000" data-width-input
+                                                class="opening-size__data-reception-mobile" type="text">
+                                        </div>
+                                        <p class="opening-size__range w">от 900 до 4000</p>
+                                    </div>
+                                </div>
+                                <div class="col1-rows__quantity-doors">
+                                    <div class="quantity-doors__text-doors">Кол-во дверей</div>
+                                    <ul class="quantity-doors__select-doors">
+                                        <li class="quantity-doors__door">2</li>
+                                        <li class="quantity-doors__door active">3</li>
+                                        <li class="quantity-doors__door">4</li>
+                                    </ul>
+                                </div>
+                                <div class="col1-rows__price">12 800 ₽</div>
+                                <button type="submit" data-modal class="col1-rows__leave-apln">
+                                    Оставить заявку
+                                </button>
+                            </div>
+                            <div class="calc-slider-door__col2">
+                                <div class="calc-slider-door__col2-row1">
+                                    <h3 class="title-h3">Профиль: <br> Стандарт “Серебро”</h3>
+                                    <img src="./images/calc-slider-door/profele.png" alt="profele">
+                                </div>
+                                <ul class="doors__col2-row2">
+                                    <li class="doors__door d1">
+                                        <picture>
+                                            <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
+                                                media="(max-width:650px)">
+                                            <source srcset="./images/calc-slider-door/door.png" type="image/png"
+                                                media="(min-width:650px)">
+                                            <img src="./images/calc-slider-door/door.png" alt="door">
+                                        </picture>
+                                    </li>
+                                    <li class="doors__door d2">
+                                        <picture>
+                                            <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
+                                                media="(max-width:650px)">
+                                            <source srcset="./images/calc-slider-door/door.png" type="image/png"
+                                                media="(min-width:650px)">
+                                            <img src="./images/calc-slider-door/door.png" alt="door">
+                                        </picture>
+                                    </li>
+                                    <li class="doors__door d3">
+                                        <picture>
+                                            <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
+                                                media="(max-width:650px)">
+                                            <source srcset="./images/calc-slider-door/door.png" type="image/png"
+                                                media="(min-width:650px)">
+                                            <img src="./images/calc-slider-door/door.png" alt="door">
+                                        </picture>
+                                    </li>
+                                    <li class="doors__door d4">
+                                        <picture>
+                                            <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
+                                                media="(max-width:650px)">
+                                            <source srcset="./images/calc-slider-door/door.png" type="image/png"
+                                                media="(min-width:650px)">
+                                            <img src="./images/calc-slider-door/door.png" alt="door">
+                                        </picture>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="calc-slider-door__cost-set">
+                            <h3 class="title-h3 desctop-from650">В стоимость комплекта входит:</h3>
+                            <div class="calc-slider-door__spoller spoller">
+                                <div class="spoller__on-off">
+                                    <h3 class="spoller__mobile-to650">В стоимость комплекта входит</h3>
+                                    <button class="spoller__btn-arrow"></button>
+                                </div>
+                                <div class="spoller__box-text">
+                                    <ul class="calc-slider-door__items spoller__text">
+                                        <li>
+                                            – двери-купе в сборе с установленными верхними и нижними роликами
+                                        </li>
+                                        <li>
+                                            – верхняя и нижняя направляющие на ширину проема (треки)
+                                        </li>
+                                        <li>
+                                            – стопора, по 1 шт. для каждой двери (устанавливаются в нижний трек при
+                                            монтаже)
+                                        </li>
+                                        <li>
+                                            – торцевая противоударная лента с клеевой основой
+                                        </li>
+                                    </ul>
+                                    <p class="calc-slider-door__text spoller__text"><span>ВАЖНО!</span>
+                                        Расчет не является официальной офертой!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="calc-slider-door__list-part2">
+                        <li class="calc-slider-door__item-p2">
+                            <img src="./images/calc-slider-door/up-down.svg" alt="triangle">
+                            <p>Высота проема <br> до 3400 мм</p>
+                        </li>
+                        <li class="calc-slider-door__item-p2">
+                            <img src="./images/calc-slider-door/hammer.svg" alt="gear">
+                            <p>Безопасные стекла <br> и зеркала</p>
+                        </li>
+                        <li class="calc-slider-door__item-p2">
+                            <img src="./images/calc-slider-door/toning.svg" alt="wrench">
                             <p>Тонированные <br> зеркала и стекла</p>
                         </li>
-                        <li class="intro__item">
-                            <img src="./images/intro/check.svg" alt="check">
+                        <li class="calc-slider-door__item-p2">
+                            <img src="./images/calc-slider-door/ral.svg" alt="check">
                             <p>Окраска по каталогу</p>
                         </li>
                     </ul>
@@ -202,16 +351,17 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <h2 class="title-h2"></h2>
-
 
                 </div>
             </div>
         </footer>
     </div>
     <script src="./js/order-call.js"></script>
+    <script src="./js/price-calc.js"></script>
     <script src="./js/price-calc-popup.js"></script>
+    <script src="./js/price-calc-closet.js"></script>
     <script src="./js/intro.js"></script>
+    <script src="./js/spoller.js"></script>
     <script src="./js/script.js"></script>
 
 </body>
