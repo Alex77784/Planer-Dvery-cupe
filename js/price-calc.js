@@ -49,10 +49,14 @@ function selectBtnAndCalcPrice(event) {
             elem.classList.remove('active');
         }
         event.target.classList.add('active');
+        let x = parseInt(amountDSPm2 + sumSetDoors) + ' ₽';
 
         if (!(dataHieght == 0) && !(dataWidth == 0)) {
-            let x = parseInt(amountDSPm2 + sumSetDoors) + ' ₽';
-            priceCell.textContent = x.slice(0, 2) + ' ' + x.slice(2,);
+            if ((x.slice(0, 2) + ' ' + x.slice(2,)).length == 7) {
+                priceCell.textContent = x.slice(0, 1) + ' ' + x.slice(1,);
+            } else {
+                priceCell.textContent = x.slice(0, 2) + ' ' + x.slice(2,);
+            }
         }
     }
 }

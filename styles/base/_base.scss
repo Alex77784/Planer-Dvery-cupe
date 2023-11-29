@@ -21,7 +21,6 @@ body {
     text-align: center;
 
     @include adaptive-font(26, 36);
-    font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.36px;
@@ -30,6 +29,13 @@ body {
 }
 
 .title-h3 {
+    color: $main-blue;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.title-h4 {
     color: $main-blue;
     font-size: 22px;
     font-weight: 500;

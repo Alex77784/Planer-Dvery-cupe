@@ -42,6 +42,10 @@
         color: black;
         font-size: 24px;
         line-height: 1.2;
+
+        &::placeholder {
+            color: rgba(205, 205, 205, 0.60);
+        }
     }
 
     &__desc-input-data-mobile {
