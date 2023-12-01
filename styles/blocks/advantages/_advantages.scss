@@ -1,0 +1,100 @@
+.advantages {
+  &__inner {
+    @include media-width767 {
+      padding: 20px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+
+    @include media-width992 {
+      gap: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__card {
+    width: 31%;
+    padding: 40px;
+
+    border-radius: 20px;
+    background: $white;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+
+    @media (max-width:1195px) {
+      width: 47%;
+    }
+
+    @media (max-width:830px) {
+      width: 80%;
+    }
+
+    @include media-width570 {
+      width: 100%;
+      padding: 20px 30px;
+    }
+
+
+  }
+
+  &__row-img {
+    margin-bottom: 20px;
+
+    @include media-width425 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 0;
+
+      &>svg {
+        min-width: 48px;
+      }
+
+      &>img {
+        max-width: 48px;
+      }
+    }
+  }
+
+  &__h4 {
+    margin-top: 20px;
+
+    @include media-width425 {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+
+  &__hidden-btn {
+    display: none;
+
+    @include media-width425 {
+      display: block;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.5;
+    transition: $transition;
+    max-height: unset;
+
+    @include media-width425 {
+      font-size: 16px;
+      max-height: 0;
+      overflow: hidden;
+      padding-top: 15px;
+    }
+  }
+
+  &__btn-send {
+    display: block;
+    max-width: 377px;
+    margin: 0 auto;
+  }
+}

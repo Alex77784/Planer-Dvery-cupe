@@ -1,43 +1,47 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    background: #F8F8F8;
-    color: $main-black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background: #F8F8F8;
+  color: $main-black;
 }
 
 .wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .container {
-    width: 100%;
-    max-width: 1550px;
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .title-h2 {
-    color: $main-blue;
-    text-align: center;
+  color: $main-blue;
+  text-align: center;
 
-    @include adaptive-font(26, 36);
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.36px;
+  @include adaptive-font(26, 36);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.36px;
 
-    margin-bottom: 60px;
+  margin-bottom: 60px;
+
+  @include media-width767 {
+    margin-bottom: 30px;
+  }
 }
 
 .title-h3 {
-    color: $main-blue;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 1.2;
+  color: $main-blue;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .title-h4 {
-    color: $main-blue;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.2;
+  color: $main-blue;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
 }

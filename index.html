@@ -2,637 +2,691 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/base/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Планер - двери-купе</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/base/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Планер - двери-купе</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a href="#" class="header__logo">
-                        <img src="./images/header/logo.svg" alt="logo">
-                    </a>
-                    <a href="#" class="header__address">
-                        г. Санкт-Петербург, пр. Елизарова, <br>
-                        дом 34/2 (лит.Л), 3 этаж, офис 346
-                    </a>
-                    <ul class="contacts-list">
-                        <li><a href="#" class="contacts-list__link">
-                                <img src="./images/header/telegram.svg" alt="icon">
-                                <span class="contacts-list__mobile-hide">Telegram</span></a></li>
-                        <li><a href="#" class="contacts-list__link">
-                                <img src="./images/header/watsap.svg" alt="icon">
-                                <span class="contacts-list__mobile-hide">Whatsapp</span></a></li>
-                        <li><a href="tel:+78123469043" class="contacts-list__link">
-                                <img src="./images/header/phone.svg" alt="icon">
-                                <span class="contacts-list__mobile-hide phone-blue">+7 (812) 346 90 43</span>
-                            </a></li>
-                    </ul>
-                    <button data-modal class="header__btn">Обратный звонок</button>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <img src="./images/header/logo.svg" alt="logo">
+          </a>
+          <a href="#" class="header__address">
+            г. Санкт-Петербург, пр. Елизарова, <br>
+            дом 34/2 (лит.Л), 3 этаж, офис 346
+          </a>
+          <ul class="contacts-list">
+            <li><a href="#" class="contacts-list__link">
+                <img src="./images/header/telegram.svg" alt="icon">
+                <span class="contacts-list__mobile-hide">Telegram</span></a></li>
+            <li><a href="#" class="contacts-list__link">
+                <img src="./images/header/watsap.svg" alt="icon">
+                <span class="contacts-list__mobile-hide">Whatsapp</span></a></li>
+            <li><a href="tel:+78123469043" class="contacts-list__link">
+                <img src="./images/header/phone.svg" alt="icon">
+                <span class="contacts-list__mobile-hide phone-blue">+7 (812) 346 90 43</span>
+              </a></li>
+          </ul>
+          <button data-modal class="header__btn">Обратный звонок</button>
+        </div>
+      </div>
+      <!-- --------------------mobile block------------------ -->
+      <div class="header-mobile box-nav-fixed">
+        <div class="container">
+          <nav class="box-nav-fixed__nav">
+            <a href="#">
+              <img src="./images/header/mobil/home.svg" alt="home">
+              Главная
+            </a>
+            <a href="#">
+              <img src="./images/header/mobil/calc.svg" alt="calc">
+              Калькулятор
+            </a>
+            <a href="#">
+              <img src="./images/header/mobil/baggage.svg" alt="projects">
+              Проекты
+            </a>
+            <a href="#">
+              <img src="./images/header/mobil/location.svg" alt="contacts">
+              Контакты
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="introduction">
+        <div class="intro__container">
+          <div class="intro__inner">
+            <!-- start inner -->
+            <article class="intro__col-content">
+              <div class="intro__box-titles">
+                <a href="#" class="intro__title-h3">
+                  <h3 data-title3="closet">Шкафы купе</h3>
+                </a>
+                <a href="#" class="intro__title-h3">
+                  <h3 data-title3="slidin-door">Раздвижные двери</h3>
+                </a>
+                <a href="#" class="intro__title-h3">
+                  <h3 data-title3="partition">
+                    Межкомнатные <br>
+                    перегородки
+                  </h3>
+                </a>
+              </div>
+              <p class="intro__text">
+                от производителя <br> в Санкт-Петербурге
+              </p>
+              <button type="button" class="intro__btn-send price-calculation">Расчет за 3 минуты</button>
+            </article>
+            <!-- card -->
+            <div class="intro__col-product">
+              <div class=" intro__inner-col1">
+                <div data-card="closet" class="intro__box-product col1">
+                  <img src="./images/intro/closet.png" alt="image">
+                  <div class="intro__box-discr">
+                    <h4 class="intro__title-h4">
+                      ШКАФЫ КУПЕ
+                      <span>ВСТРОЕННЫЕ</span>
+                    </h4>
+                    <p class="intro__price">
+                      <span>от</span>
+                      8.000 ₽
+                    </p>
+                    <a href="#" class="intro__project-link">Проекты</a>
+                  </div>
                 </div>
+                <a href="#" class="intro__calculation">
+                  <img src="./images/intro/calc.svg" alt="calc">
+                  <h4 class="intro__calc-title">
+                    КАЛЬКУЛЯТОР
+                    <span>дверей-купе</span>
+                  </h4>
+                </a>
+              </div>
+              <div class=" intro__inner-col2">
+                <div data-card="slidin-door" class="intro__box-product col2">
+                  <img src="./images/intro/sl-doors.jpg" alt="image">
+                  <div class="intro__box-discr">
+                    <h4 class="intro__title-h4">
+                      ДВЕРИ
+                      <span>РАЗДВИЖНЫЕ</span>
+                    </h4>
+                    <p class="intro__price">
+                      <span>от</span>
+                      12.000 ₽
+                    </p>
+                    <a href="#" class="intro__project-link">Проекты</a>
+                  </div>
+                </div>
+                <div data-card="partition" class="intro__box-product col2">
+                  <img src="./images/intro/partitions.png" alt="image">
+                  <div class="intro__box-discr">
+                    <h4 class="intro__title-h4">
+                      ПЕРЕГОРОДКИ
+                      <span>МЕЖКОМНАТНЫЕ</span>
+                    </h4>
+                    <p class="intro__price">
+                      <span>от</span>
+                      16.000 ₽
+                    </p>
+                    <a href="#" class="intro__project-link">Проекты</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- --------------------mobile block------------------ -->
-            <div class="header-mobile box-nav-fixed">
-                <div class="container">
-                    <nav class="box-nav-fixed__nav">
-                        <a href="#">
-                            <img src="./images/header/mobil/home.svg" alt="home">
-                            Главная
-                        </a>
-                        <a href="#">
-                            <img src="./images/header/mobil/calc.svg" alt="calc">
-                            Калькулятор
-                        </a>
-                        <a href="#">
-                            <img src="./images/header/mobil/baggage.svg" alt="projects">
-                            Проекты
-                        </a>
-                        <a href="#">
-                            <img src="./images/header/mobil/location.svg" alt="contacts">
-                            Контакты
-                        </a>
-                    </nav>
-                </div>
+            <!-- end inner -->
+          </div>
+        </div>
+        <!-- --------------------mobile block------------------ -->
+        <div class="introduction-mobile">
+          <img src=".//images/intro/mobil/mob-intro-bd.png" alt="background" class="introduction-mobile__bd">
+          <div class="container intro-mobile__layer">
+            <div class="intro-mobile__inner">
+              <h1 class="intro-mobile__title-h1">
+                Двери купе <br>и перегородки
+              </h1>
+              <p class="intro-mobile__subtitle">
+                от производителя <br>в Санкт-Петербурге
+              </p>
+              <ul class="intro-mobile__list">
+                <li class="intro-mobile__item">офис без выходных</li>
+                <li class="intro-mobile__item">монтаж в день доставки</li>
+                <li class="intro-mobile__item">изготовление от 2-5 дней</li>
+                <li class="intro-mobile__item">отзывы на Яндекс ⭐️ 4.9</li>
+              </ul>
+              <button class="intro-mobile__btn-calcul price-calculation">
+                Расчет за 3 минуты*
+              </button>
+              <p class="intro-mobile__text">* В рабочее время</p>
             </div>
-        </header>
-        <main class="main">
-            <section class="introduction">
-                <div class="intro__container">
-                    <div class="intro__inner">
-                        <!-- start inner -->
-                        <article class="intro__col-content">
-                            <div class="intro__box-titles">
-                                <a href="#" class="intro__title-h3">
-                                    <h3 data-title3="closet">Шкафы купе</h3>
-                                </a>
-                                <a href="#" class="intro__title-h3">
-                                    <h3 data-title3="slidin-door">Раздвижные двери</h3>
-                                </a>
-                                <a href="#" class="intro__title-h3">
-                                    <h3 data-title3="partition">
-                                        Межкомнатные <br>
-                                        перегородки
-                                    </h3>
-                                </a>
-                            </div>
-                            <p class="intro__text">
-                                от производителя <br> в Санкт-Петербурге
-                            </p>
-                            <button type="button" class="intro__btn-send price-calculation">Расчет за 3 минуты</button>
-                        </article>
-                        <!-- card -->
-                        <div class="intro__col-product">
-                            <div class=" intro__inner-col1">
-                                <div data-card="closet" class="intro__box-product col1">
-                                    <img src="./images/intro/closet.png" alt="image">
-                                    <div class="intro__box-discr">
-                                        <h4 class="intro__title-h4">
-                                            ШКАФЫ КУПЕ
-                                            <span>ВСТРОЕННЫЕ</span>
-                                        </h4>
-                                        <p class="intro__price">
-                                            <span>от</span>
-                                            8.000 ₽
-                                        </p>
-                                        <a href="#" class="intro__project-link">Проекты</a>
-                                    </div>
-                                </div>
-                                <a href="#" class="intro__calculation">
-                                    <img src="./images/intro/calc.svg" alt="calc">
-                                    <h4 class="intro__calc-title">
-                                        КАЛЬКУЛЯТОР
-                                        <span>дверей-купе</span>
-                                    </h4>
-                                </a>
-                            </div>
-                            <div class=" intro__inner-col2">
-                                <div data-card="slidin-door" class="intro__box-product col2">
-                                    <img src="./images/intro/sl-doors.jpg" alt="image">
-                                    <div class="intro__box-discr">
-                                        <h4 class="intro__title-h4">
-                                            ДВЕРИ
-                                            <span>РАЗДВИЖНЫЕ</span>
-                                        </h4>
-                                        <p class="intro__price">
-                                            <span>от</span>
-                                            12.000 ₽
-                                        </p>
-                                        <a href="#" class="intro__project-link">Проекты</a>
-                                    </div>
-                                </div>
-                                <div data-card="partition" class="intro__box-product col2">
-                                    <img src="./images/intro/partitions.png" alt="image">
-                                    <div class="intro__box-discr">
-                                        <h4 class="intro__title-h4">
-                                            ПЕРЕГОРОДКИ
-                                            <span>МЕЖКОМНАТНЫЕ</span>
-                                        </h4>
-                                        <p class="intro__price">
-                                            <span>от</span>
-                                            16.000 ₽
-                                        </p>
-                                        <a href="#" class="intro__project-link">Проекты</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end inner -->
+          </div>
+        </div>
+      </section>
+      <section class="calc-slider-door">
+        <div class="container">
+          <ul class="calc-slider-door__list-part1">
+            <li class="calc-slider-door__item-p1">
+              <img src="./images/calc-slider-door/triangle.svg" alt="triangle">
+              <p>Выезд замерщика <br> в течение 1 дня</p>
+            </li>
+            <li class="calc-slider-door__item-p1">
+              <img src="./images/calc-slider-door/gear.svg" alt="gear">
+              <p>Изготовление 1-5 дней</p>
+            </li>
+            <li class="calc-slider-door__item-p1">
+              <img src="./images/calc-slider-door/wrench.svg" alt="wrench">
+              <p>Монтаж в день <br> доставки</p>
+            </li>
+            <li class="calc-slider-door__item-p1">
+              <img src="./images/calc-slider-door/check.svg" alt="check">
+              <p>Реализовали более <br> 10 000 заказов</p>
+            </li>
+          </ul>
+          <div class="calc-slider-door__wrap">
+            <h2 class="title-h2 mb650">Калькулятор дверей-купе</h2>
+            <div class="calc-slider-door__wto-cols">
+              <div class="calc-slider-door__col1">
+                <h3 class="title-h4 none650">Габариты проема</h3>
+                <div class="col1-rows__measurement">
+                  <div class="opening-size">
+                    <div class="opening-size__desc-input-data">
+                      <p class="opening-size__desc-size">
+                        Высота
+                        <span>проёма</span>
+                      </p>
+                      <input placeholder="2500" data-hieght-input class="opening-size__data-reception" type="text">
+                      <span>мм</span>
                     </div>
+                    <!-- mobile -->
+                    <div class="opening-size__desc-input-data-mobile">
+                      <p class="opening-size__desc-size-mobile">
+                        Высота
+                        <span>проёма, мм</span>
+                      </p>
+                      <input placeholder="2500" data-hieght-input class="opening-size__data-reception-mobile"
+                        type="text">
+                    </div>
+                    <p class="opening-size__range h">от 2045 до 3400</p>
+                  </div>
+                  <div class="opening-size">
+                    <div class="opening-size__desc-input-data">
+                      <p class="opening-size__desc-size">
+                        Ширина
+                        <span>проёма</span>
+                      </p>
+                      <input placeholder="3000" data-width-input class="opening-size__data-reception" type="text">
+                      <span>мм</span>
+                    </div>
+                    <!-- mobile -->
+                    <div class="opening-size__desc-input-data-mobile">
+                      <p class="opening-size__desc-size-mobile">
+                        Ширина
+                        <span>проёма, мм</span>
+                      </p>
+                      <input placeholder="3000" data-width-input class="opening-size__data-reception-mobile"
+                        type="text">
+                    </div>
+                    <p class="opening-size__range w">от 900 до 4000</p>
+                  </div>
                 </div>
-                <!-- --------------------mobile block------------------ -->
-                <div class="introduction-mobile">
-                    <img src=".//images/intro/mobil/mob-intro-bd.png" alt="background" class="introduction-mobile__bd">
-                    <div class="container intro-mobile__layer">
-                        <div class="intro-mobile__inner">
-                            <h1 class="intro-mobile__title-h1">
-                                Двери купе <br>и перегородки
-                            </h1>
-                            <p class="intro-mobile__subtitle">
-                                от производителя <br>в Санкт-Петербурге
-                            </p>
-                            <ul class="intro-mobile__list">
-                                <li class="intro-mobile__item">офис без выходных</li>
-                                <li class="intro-mobile__item">монтаж в день доставки</li>
-                                <li class="intro-mobile__item">изготовление от 2-5 дней</li>
-                                <li class="intro-mobile__item">отзывы на Яндекс ⭐️ 4.9</li>
-                            </ul>
-                            <button class="intro-mobile__btn-calcul price-calculation">
-                                Расчет за 3 минуты*
-                            </button>
-                            <p class="intro-mobile__text">* В рабочее время</p>
-                        </div>
-                    </div>
+                <div class="col1-rows__quantity-doors">
+                  <div class="quantity-doors__text-doors">Кол-во дверей</div>
+                  <ul class="quantity-doors__select-doors">
+                    <li class="quantity-doors__door">2</li>
+                    <li class="quantity-doors__door active">3</li>
+                    <li class="quantity-doors__door">4</li>
+                  </ul>
                 </div>
-            </section>
-            <section class="calc-slider-door">
-                <div class="container">
-                    <ul class="calc-slider-door__list-part1">
-                        <li class="calc-slider-door__item-p1">
-                            <img src="./images/calc-slider-door/triangle.svg" alt="triangle">
-                            <p>Выезд замерщика <br> в течение 1 дня</p>
-                        </li>
-                        <li class="calc-slider-door__item-p1">
-                            <img src="./images/calc-slider-door/gear.svg" alt="gear">
-                            <p>Изготовление 1-5 дней</p>
-                        </li>
-                        <li class="calc-slider-door__item-p1">
-                            <img src="./images/calc-slider-door/wrench.svg" alt="wrench">
-                            <p>Монтаж в день <br> доставки</p>
-                        </li>
-                        <li class="calc-slider-door__item-p1">
-                            <img src="./images/calc-slider-door/check.svg" alt="check">
-                            <p>Реализовали более <br> 10 000 заказов</p>
-                        </li>
-                    </ul>
-                    <div class="calc-slider-door__wrap">
-                        <h2 class="title-h2 mb650">Калькулятор дверей-купе</h2>
-                        <div class="calc-slider-door__wto-cols">
-                            <div class="calc-slider-door__col1">
-                                <h3 class="title-h4 none650">Габариты проема</h3>
-                                <div class="col1-rows__measurement">
-                                    <div class="opening-size">
-                                        <div class="opening-size__desc-input-data">
-                                            <p class="opening-size__desc-size">
-                                                Высота
-                                                <span>проёма</span>
-                                            </p>
-                                            <input placeholder="2500" data-hieght-input
-                                                class="opening-size__data-reception" type="text">
-                                            <span>мм</span>
-                                        </div>
-                                        <!-- mobile -->
-                                        <div class="opening-size__desc-input-data-mobile">
-                                            <p class="opening-size__desc-size-mobile">
-                                                Высота
-                                                <span>проёма, мм</span>
-                                            </p>
-                                            <input placeholder="2500" data-hieght-input
-                                                class="opening-size__data-reception-mobile" type="text">
-                                        </div>
-                                        <p class="opening-size__range h">от 2045 до 3400</p>
-                                    </div>
-                                    <div class="opening-size">
-                                        <div class="opening-size__desc-input-data">
-                                            <p class="opening-size__desc-size">
-                                                Ширина
-                                                <span>проёма</span>
-                                            </p>
-                                            <input placeholder="3000" data-width-input
-                                                class="opening-size__data-reception" type="text">
-                                            <span>мм</span>
-                                        </div>
-                                        <!-- mobile -->
-                                        <div class="opening-size__desc-input-data-mobile">
-                                            <p class="opening-size__desc-size-mobile">
-                                                Ширина
-                                                <span>проёма, мм</span>
-                                            </p>
-                                            <input placeholder="3000" data-width-input
-                                                class="opening-size__data-reception-mobile" type="text">
-                                        </div>
-                                        <p class="opening-size__range w">от 900 до 4000</p>
-                                    </div>
-                                </div>
-                                <div class="col1-rows__quantity-doors">
-                                    <div class="quantity-doors__text-doors">Кол-во дверей</div>
-                                    <ul class="quantity-doors__select-doors">
-                                        <li class="quantity-doors__door">2</li>
-                                        <li class="quantity-doors__door active">3</li>
-                                        <li class="quantity-doors__door">4</li>
-                                    </ul>
-                                </div>
-                                <div class="col1-rows__price">12 800 ₽</div>
-                                <button type="submit" data-modal class="col1-rows__leave-apln">
-                                    Оставить заявку
-                                </button>
-                            </div>
-                            <div class="calc-slider-door__col2">
-                                <div class="calc-slider-door__col2-row1">
-                                    <h3 class="title-h4">Профиль: <br> Стандарт “Серебро”</h3>
-                                    <img src="./images/calc-slider-door/profele.png" alt="profele">
-                                </div>
-                                <ul class="doors__col2-row2">
-                                    <li class="doors__door d1">
-                                        <picture>
-                                            <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
-                                                media="(max-width:650px)">
-                                            <source srcset="./images/calc-slider-door/door.png" type="image/png"
-                                                media="(min-width:650px)">
-                                            <img src="./images/calc-slider-door/door.png" alt="door">
-                                        </picture>
-                                    </li>
-                                    <li class="doors__door d2">
-                                        <picture>
-                                            <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
-                                                media="(max-width:650px)">
-                                            <source srcset="./images/calc-slider-door/door.png" type="image/png"
-                                                media="(min-width:650px)">
-                                            <img src="./images/calc-slider-door/door.png" alt="door">
-                                        </picture>
-                                    </li>
-                                    <li class="doors__door d3">
-                                        <picture>
-                                            <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
-                                                media="(max-width:650px)">
-                                            <source srcset="./images/calc-slider-door/door.png" type="image/png"
-                                                media="(min-width:650px)">
-                                            <img src="./images/calc-slider-door/door.png" alt="door">
-                                        </picture>
-                                    </li>
-                                    <li class="doors__door d4">
-                                        <picture>
-                                            <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
-                                                media="(max-width:650px)">
-                                            <source srcset="./images/calc-slider-door/door.png" type="image/png"
-                                                media="(min-width:650px)">
-                                            <img src="./images/calc-slider-door/door.png" alt="door">
-                                        </picture>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="calc-slider-door__cost-set">
-                            <h3 class="title-h3 desctop-from650">В стоимость комплекта входит:</h3>
-                            <div class="calc-slider-door__spoller spoller">
-                                <div class="spoller__on-off">
-                                    <h3 class="spoller__mobile-to650">В стоимость комплекта входит</h3>
-                                    <button class="spoller__btn-arrow"></button>
-                                </div>
-                                <div class="spoller__box-text">
-                                    <ul class="calc-slider-door__items spoller__text">
-                                        <li>
-                                            – двери-купе в сборе с установленными верхними и нижними роликами
-                                        </li>
-                                        <li>
-                                            – верхняя и нижняя направляющие на ширину проема (треки)
-                                        </li>
-                                        <li>
-                                            – стопора, по 1 шт. для каждой двери (устанавливаются в нижний трек при
-                                            монтаже)
-                                        </li>
-                                        <li>
-                                            – торцевая противоударная лента с клеевой основой
-                                        </li>
-                                    </ul>
-                                    <p class="calc-slider-door__text spoller__text"><span>ВАЖНО!</span>
-                                        Расчет не является официальной офертой!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="calc-slider-door__list-part2">
-                        <li class="calc-slider-door__item-p2">
-                            <img src="./images/calc-slider-door/up-down.svg" alt="triangle">
-                            <p>Высота проема <br> до 3400 мм</p>
-                        </li>
-                        <li class="calc-slider-door__item-p2">
-                            <img src="./images/calc-slider-door/hammer.svg" alt="gear">
-                            <p>Безопасные стекла <br> и зеркала</p>
-                        </li>
-                        <li class="calc-slider-door__item-p2">
-                            <img src="./images/calc-slider-door/toning.svg" alt="wrench">
-                            <p>Тонированные <br> зеркала и стекла</p>
-                        </li>
-                        <li class="calc-slider-door__item-p2">
-                            <img src="./images/calc-slider-door/ral.svg" alt="check">
-                            <p>Окраска по каталогу</p>
-                        </li>
-                    </ul>
+                <div class="col1-rows__price">12 800 ₽</div>
+                <button type="submit" data-modal class="col1-rows__leave-apln">
+                  Оставить заявку
+                </button>
+              </div>
+              <div class="calc-slider-door__col2">
+                <div class="calc-slider-door__col2-row1">
+                  <h3 class="title-h4">Профиль: <br> Стандарт “Серебро”</h3>
+                  <img src="./images/calc-slider-door/profele.png" alt="profele">
                 </div>
-            </section>
-            <section class="projects">
-                <div class="container">
-                    <h2 class="projects__h2 title-h2">Наши проекты</h2>
-
-                    <div class="projects-mobile650">
-                        <h3 class="projects-mobile650__h3 title-h3">Двери купе</h3>
-                        <div class="projects__inner">
-                            <div class="projects__content">
-                                <h3 class="projects__h3 title-h3">Двери купе</h3>
-                                <div class="projects-mobile650__btn-box">
-                                    <button class="projects-mobile650__btn-left">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16"
-                                            viewBox="0 0 77 16" fill="none">
-                                            <path
-                                                d="M75.5 7C76.0523 7 76.5 7.44772 76.5 8C76.5 8.55228 76.0523 9 75.5 9V7ZM0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM75.5 9H1V7H75.5V9Z"
-                                                fill="#004765" />
-                                        </svg>
-                                    </button>
-                                    <div class="projects-mobile650__count">
-                                        <span>01</span>/
-                                        <span>03</span>
-                                    </div>
-                                    <button class="projects-mobile650__btn-right">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16"
-                                            viewBox="0 0 77 16" fill="none">
-                                            <path
-                                                d="M1.5 7C0.947715 7 0.5 7.44772 0.5 8C0.5 8.55228 0.947715 9 1.5 9V7ZM76.7071 8.70711C77.0976 8.31658 77.0976 7.68342 76.7071 7.29289L70.3431 0.928932C69.9526 0.538408 69.3195 0.538408 68.9289 0.928932C68.5384 1.31946 68.5384 1.95262 68.9289 2.34315L74.5858 8L68.9289 13.6569C68.5384 14.0474 68.5384 14.6805 68.9289 15.0711C69.3195 15.4616 69.9526 15.4616 70.3431 15.0711L76.7071 8.70711ZM1.5 9H76V7H1.5V9Z"
-                                                fill="#004765" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div>
-                                    <h4 class="projects__h4 title-h4">Проект в Сестрорецке</h4>
-                                    <p class="projects__text">
-                                        Успешно реализован проект откатной двери для
-                                        гардеробной.
-                                        Двери-купе в профиле
-                                        SPACE "Шампань" со вставками из Экокожи "ATLAS".
-                                    </p>
-                                    <button class="projects__text-open">
-                                        <div>Читать полностью</div>
-                                        <span>Свернуть</span>
-                                    </button>
-                                </div>
-                                <p class="projects__price">от 12 800 ₽</p>
-                                <button type="button" class="projects__btn-send price-calculation">Расчет за 3
-                                    минуты</button>
-                            </div>
-
-                            <div class="projects__carousel">
-                                <div class="projects__wrap-carl">
-                                    <button class="projects__btn-left">
-                                        <svg width="30" height="190" viewBox="0 0 30 190" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g id="Group 11">
-                                                <path id="Vector 84"
-                                                    d="M28.8176 1C28.8176 2.99059 10.9392 63.298 2 95L28.8176 189"
-                                                    stroke="white" stroke-width="2" />
-                                            </g>
-                                        </svg>
-                                    </button>
-                                    <ul class="projects__slider">
-                                        <li class="projects__item">
-                                            <img src="./images/project/door-slide1.webp" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/door-slide2.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/door-slide3.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/door-slide4.jpg" alt="picture">
-                                        </li>
-                                    </ul>
-                                    <button class="projects__btn-right">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="190"
-                                            viewBox="0 0 30 190" fill="none">
-                                            <path
-                                                d="M0.999979 1C0.999979 2.99059 18.8784 63.298 27.8176 95L0.999979 189"
-                                                stroke="white" stroke-width="2" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <ul class="projects__box-dot d1"><!-- create in js --></ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projects-mobile650">
-                        <h3 class="projects-mobile650__h3 title-h3">Перегородки</h3>
-                        <div class="projects__inner">
-                            <div class="projects__content">
-                                <h3 class="projects__h3 title-h3">Перегородки</h3>
-                                <div class="projects-mobile650__btn-box">
-                                    <button class="projects-mobile650__btn-left">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16"
-                                            viewBox="0 0 77 16" fill="none">
-                                            <path
-                                                d="M75.5 7C76.0523 7 76.5 7.44772 76.5 8C76.5 8.55228 76.0523 9 75.5 9V7ZM0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM75.5 9H1V7H75.5V9Z"
-                                                fill="#004765" />
-                                        </svg>
-                                    </button>
-                                    <div class="projects-mobile650__count">
-                                        <span>01</span>/
-                                        <span>03</span>
-                                    </div>
-                                    <button class="projects-mobile650__btn-right">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16"
-                                            viewBox="0 0 77 16" fill="none">
-                                            <path
-                                                d="M1.5 7C0.947715 7 0.5 7.44772 0.5 8C0.5 8.55228 0.947715 9 1.5 9V7ZM76.7071 8.70711C77.0976 8.31658 77.0976 7.68342 76.7071 7.29289L70.3431 0.928932C69.9526 0.538408 69.3195 0.538408 68.9289 0.928932C68.5384 1.31946 68.5384 1.95262 68.9289 2.34315L74.5858 8L68.9289 13.6569C68.5384 14.0474 68.5384 14.6805 68.9289 15.0711C69.3195 15.4616 69.9526 15.4616 70.3431 15.0711L76.7071 8.70711ZM1.5 9H76V7H1.5V9Z"
-                                                fill="#004765" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div>
-                                    <h4 class="projects__h4 title-h4">Проект в Новое Сертолово</h4>
-                                    <p class="projects__text">
-                                        Успешно реализован проект стационарной непрозрачной межкомнатной перегородки в
-                                        стиле ЛОФТ из 2-х неподвижных створок. Профиль SPACE "Белый матовый" со
-                                        вставками из стекла с пленкой цвета "Белый" (010к).
-                                    </p>
-                                    <button class="projects__text-open">
-                                        <div>Читать полностью</div>
-                                        <span>Свернуть</span>
-                                    </button>
-                                </div>
-                                <p class="projects__price">от 18 300 ₽</p>
-                                <button type="button" class="projects__btn-send price-calculation">Расчет за 3
-                                    минуты</button>
-                            </div>
-
-                            <div class="projects__carousel">
-                                <div class="projects__wrap-carl">
-                                    <button class="projects__btn-left">
-                                        <svg width="30" height="190" viewBox="0 0 30 190" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g id="Group 11">
-                                                <path id="Vector 84"
-                                                    d="M28.8176 1C28.8176 2.99059 10.9392 63.298 2 95L28.8176 189"
-                                                    stroke="white" stroke-width="2" />
-                                            </g>
-                                        </svg>
-                                    </button>
-                                    <ul class="projects__slider">
-                                        <li class="projects__item">
-                                            <img src="./images/project/partition1.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/partition2.webp" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/partition3.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/partition4.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/partition5.webp" alt="picture">
-                                        </li>
-                                    </ul>
-                                    <button class="projects__btn-right">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="190"
-                                            viewBox="0 0 30 190" fill="none">
-                                            <path
-                                                d="M0.999979 1C0.999979 2.99059 18.8784 63.298 27.8176 95L0.999979 189"
-                                                stroke="white" stroke-width="2" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <ul class="projects__box-dot d2"><!-- create in js --></ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projects-mobile650">
-                        <h3 class="projects-mobile650__h3 title-h3">Встроенные шкафы</h3>
-                        <div class="projects__inner">
-                            <div class="projects__content">
-                                <h3 class="projects__h3 title-h3">Встроенные шкафы</h3>
-                                <div class="projects-mobile650__btn-box">
-                                    <button class="projects-mobile650__btn-left">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16"
-                                            viewBox="0 0 77 16" fill="none">
-                                            <path
-                                                d="M75.5 7C76.0523 7 76.5 7.44772 76.5 8C76.5 8.55228 76.0523 9 75.5 9V7ZM0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM75.5 9H1V7H75.5V9Z"
-                                                fill="#004765" />
-                                        </svg>
-                                    </button>
-                                    <div class="projects-mobile650__count">
-                                        <span>01</span>/
-                                        <span>03</span>
-                                    </div>
-                                    <button class="projects-mobile650__btn-right">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16"
-                                            viewBox="0 0 77 16" fill="none">
-                                            <path
-                                                d="M1.5 7C0.947715 7 0.5 7.44772 0.5 8C0.5 8.55228 0.947715 9 1.5 9V7ZM76.7071 8.70711C77.0976 8.31658 77.0976 7.68342 76.7071 7.29289L70.3431 0.928932C69.9526 0.538408 69.3195 0.538408 68.9289 0.928932C68.5384 1.31946 68.5384 1.95262 68.9289 2.34315L74.5858 8L68.9289 13.6569C68.5384 14.0474 68.5384 14.6805 68.9289 15.0711C69.3195 15.4616 69.9526 15.4616 70.3431 15.0711L76.7071 8.70711ZM1.5 9H76V7H1.5V9Z"
-                                                fill="#004765" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div>
-                                    <h4 class="projects__h4 title-h4">Проект на Лунчарского</h4>
-                                    <p class="projects__text">
-                                        Успешно реализован проект фасада встроенного шкафа-купе. Двери (3шт.) в профиле
-                                        ТЕТРИС "Черный матовый" со вставками из зеркала и ЛДСП цвета "Белый" с
-                                        горизонтальными делителями.
-                                    </p>
-                                    <button class="projects__text-open">
-                                        <div>Читать полностью</div>
-                                        <span>Свернуть</span>
-                                    </button>
-                                </div>
-                                <p class="projects__price">от 14 200 ₽</p>
-                                <button type="button" class="projects__btn-send price-calculation">Расчет за 3
-                                    минуты</button>
-                            </div>
-
-                            <div class="projects__carousel">
-                                <div class="projects__wrap-carl">
-                                    <button class="projects__btn-left">
-                                        <svg width="30" height="190" viewBox="0 0 30 190" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g id="Group 11">
-                                                <path id="Vector 84"
-                                                    d="M28.8176 1C28.8176 2.99059 10.9392 63.298 2 95L28.8176 189"
-                                                    stroke="white" stroke-width="2" />
-                                            </g>
-                                        </svg>
-                                    </button>
-                                    <ul class="projects__slider">
-                                        <li class="projects__item">
-                                            <img src="./images/project/closet1.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/closet2.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/closet3.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/closet4.webp" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/closet5.jpg" alt="picture">
-                                        </li>
-                                        <li class="projects__item">
-                                            <img src="./images/project/closet6.webp" alt="picture">
-                                        </li>
-                                    </ul>
-                                    <button class="projects__btn-right">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="190"
-                                            viewBox="0 0 30 190" fill="none">
-                                            <path
-                                                d="M0.999979 1C0.999979 2.99059 18.8784 63.298 27.8176 95L0.999979 189"
-                                                stroke="white" stroke-width="2" />
-                                        </svg>
-                                    </button>
-                                </div>
-                                <ul class="projects__box-dot d3"><!-- create in js --></ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-
-                </div>
+                <ul class="doors__col2-row2">
+                  <li class="doors__door d1">
+                    <picture>
+                      <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
+                        media="(max-width:650px)">
+                      <source srcset="./images/calc-slider-door/door.png" type="image/png" media="(min-width:650px)">
+                      <img src="./images/calc-slider-door/door.png" alt="door">
+                    </picture>
+                  </li>
+                  <li class="doors__door d2">
+                    <picture>
+                      <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
+                        media="(max-width:650px)">
+                      <source srcset="./images/calc-slider-door/door.png" type="image/png" media="(min-width:650px)">
+                      <img src="./images/calc-slider-door/door.png" alt="door">
+                    </picture>
+                  </li>
+                  <li class="doors__door d3">
+                    <picture>
+                      <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
+                        media="(max-width:650px)">
+                      <source srcset="./images/calc-slider-door/door.png" type="image/png" media="(min-width:650px)">
+                      <img src="./images/calc-slider-door/door.png" alt="door">
+                    </picture>
+                  </li>
+                  <li class="doors__door d4">
+                    <picture>
+                      <source srcset="./images/calc-slider-door/door-mobile.png" type="image/png"
+                        media="(max-width:650px)">
+                      <source srcset="./images/calc-slider-door/door.png" type="image/png" media="(min-width:650px)">
+                      <img src="./images/calc-slider-door/door.png" alt="door">
+                    </picture>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </footer>
-    </div>
-    <script src="./js/order-call.js"></script>
-    <script src="./js/price-calc.js"></script>
-    <script src="./js/price-calc-popup.js"></script>
-    <script src="./js/price-calc-closet.js"></script>
-    <script src="./js/intro.js"></script>
-    <script src="./js/spoller.js"></script>
-    <script src="./js/project-slid.js"></script>
-    <script src="./js/project.js"></script>
-    <script src="./js/script.js"></script>
+            <div class="calc-slider-door__cost-set">
+              <h3 class="title-h3 desctop-from650">В стоимость комплекта входит:</h3>
+              <div class="calc-slider-door__spoller spoller">
+                <div class="spoller__on-off">
+                  <h3 class="spoller__mobile-to650">В стоимость комплекта входит</h3>
+                  <button class="spoller__btn-arrow"></button>
+                </div>
+                <div class="spoller__box-text">
+                  <ul class="calc-slider-door__items spoller__text">
+                    <li>
+                      – двери-купе в сборе с установленными верхними и нижними роликами
+                    </li>
+                    <li>
+                      – верхняя и нижняя направляющие на ширину проема (треки)
+                    </li>
+                    <li>
+                      – стопора, по 1 шт. для каждой двери (устанавливаются в нижний трек при
+                      монтаже)
+                    </li>
+                    <li>
+                      – торцевая противоударная лента с клеевой основой
+                    </li>
+                  </ul>
+                  <p class="calc-slider-door__text spoller__text"><span>ВАЖНО!</span>
+                    Расчет не является официальной офертой!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="calc-slider-door__list-part2">
+            <li class="calc-slider-door__item-p2">
+              <img src="./images/calc-slider-door/up-down.svg" alt="triangle">
+              <p>Высота проема <br> до 3400 мм</p>
+            </li>
+            <li class="calc-slider-door__item-p2">
+              <img src="./images/calc-slider-door/hammer.svg" alt="gear">
+              <p>Безопасные стекла <br> и зеркала</p>
+            </li>
+            <li class="calc-slider-door__item-p2">
+              <img src="./images/calc-slider-door/toning.svg" alt="wrench">
+              <p>Тонированные <br> зеркала и стекла</p>
+            </li>
+            <li class="calc-slider-door__item-p2">
+              <img src="./images/calc-slider-door/ral.svg" alt="check">
+              <p>Окраска по каталогу</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container">
+          <h2 class="projects__h2 title-h2">Наши проекты</h2>
+
+          <div class="projects-mobile650">
+            <h3 class="projects-mobile650__h3 title-h3">Двери купе</h3>
+            <div class="projects__inner">
+              <div class="projects__content">
+                <h3 class="projects__h3 title-h3">Двери купе</h3>
+                <div class="projects-mobile650__btn-box">
+                  <button class="projects-mobile650__btn-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16" viewBox="0 0 77 16" fill="none">
+                      <path
+                        d="M75.5 7C76.0523 7 76.5 7.44772 76.5 8C76.5 8.55228 76.0523 9 75.5 9V7ZM0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM75.5 9H1V7H75.5V9Z"
+                        fill="#004765" />
+                    </svg>
+                  </button>
+                  <div class="projects-mobile650__count">
+                    <span>01</span>/
+                    <span>03</span>
+                  </div>
+                  <button class="projects-mobile650__btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16" viewBox="0 0 77 16" fill="none">
+                      <path
+                        d="M1.5 7C0.947715 7 0.5 7.44772 0.5 8C0.5 8.55228 0.947715 9 1.5 9V7ZM76.7071 8.70711C77.0976 8.31658 77.0976 7.68342 76.7071 7.29289L70.3431 0.928932C69.9526 0.538408 69.3195 0.538408 68.9289 0.928932C68.5384 1.31946 68.5384 1.95262 68.9289 2.34315L74.5858 8L68.9289 13.6569C68.5384 14.0474 68.5384 14.6805 68.9289 15.0711C69.3195 15.4616 69.9526 15.4616 70.3431 15.0711L76.7071 8.70711ZM1.5 9H76V7H1.5V9Z"
+                        fill="#004765" />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <h4 class="projects__h4 title-h4">Проект в Сестрорецке</h4>
+                  <p class="projects__text">
+                    Успешно реализован проект откатной двери для
+                    гардеробной.
+                    Двери-купе в профиле
+                    SPACE "Шампань" со вставками из Экокожи "ATLAS".
+                  </p>
+                  <button class="projects__text-open">
+                    <b>Читать полностью</b>
+                    <span>Свернуть</span>
+                  </button>
+                </div>
+                <p class="projects__price">от 12 800 ₽</p>
+                <button type="button" class="projects__btn-send price-calculation">Расчет за 3
+                  минуты</button>
+              </div>
+
+              <div class="projects__carousel">
+                <div class="projects__wrap-carl">
+                  <button class="projects__btn-left">
+                    <svg width="30" height="190" viewBox="0 0 30 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Group 11">
+                        <path id="Vector 84" d="M28.8176 1C28.8176 2.99059 10.9392 63.298 2 95L28.8176 189"
+                          stroke="white" stroke-width="2" />
+                      </g>
+                    </svg>
+                  </button>
+                  <ul class="projects__slider">
+                    <li class="projects__item">
+                      <img src="./images/project/door-slide1.webp" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/door-slide2.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/door-slide3.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/door-slide4.jpg" alt="picture">
+                    </li>
+                  </ul>
+                  <button class="projects__btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="190" viewBox="0 0 30 190" fill="none">
+                      <path d="M0.999979 1C0.999979 2.99059 18.8784 63.298 27.8176 95L0.999979 189" stroke="white"
+                        stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+                <ul class="projects__box-dot d1"><!-- create in js --></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-mobile650">
+            <h3 class="projects-mobile650__h3 title-h3">Перегородки</h3>
+            <div class="projects__inner">
+              <div class="projects__content">
+                <h3 class="projects__h3 title-h3">Перегородки</h3>
+                <div class="projects-mobile650__btn-box">
+                  <button class="projects-mobile650__btn-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16" viewBox="0 0 77 16" fill="none">
+                      <path
+                        d="M75.5 7C76.0523 7 76.5 7.44772 76.5 8C76.5 8.55228 76.0523 9 75.5 9V7ZM0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM75.5 9H1V7H75.5V9Z"
+                        fill="#004765" />
+                    </svg>
+                  </button>
+                  <div class="projects-mobile650__count">
+                    <span>01</span>/
+                    <span>03</span>
+                  </div>
+                  <button class="projects-mobile650__btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16" viewBox="0 0 77 16" fill="none">
+                      <path
+                        d="M1.5 7C0.947715 7 0.5 7.44772 0.5 8C0.5 8.55228 0.947715 9 1.5 9V7ZM76.7071 8.70711C77.0976 8.31658 77.0976 7.68342 76.7071 7.29289L70.3431 0.928932C69.9526 0.538408 69.3195 0.538408 68.9289 0.928932C68.5384 1.31946 68.5384 1.95262 68.9289 2.34315L74.5858 8L68.9289 13.6569C68.5384 14.0474 68.5384 14.6805 68.9289 15.0711C69.3195 15.4616 69.9526 15.4616 70.3431 15.0711L76.7071 8.70711ZM1.5 9H76V7H1.5V9Z"
+                        fill="#004765" />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <h4 class="projects__h4 title-h4">Проект в Новое Сертолово</h4>
+                  <p class="projects__text">
+                    Успешно реализован проект стационарной непрозрачной межкомнатной перегородки в
+                    стиле ЛОФТ из 2-х неподвижных створок. Профиль SPACE "Белый матовый" со
+                    вставками из стекла с пленкой цвета "Белый" (010к).
+                  </p>
+                  <button class="projects__text-open">
+                    <b>Читать полностью</b>
+                    <span>Свернуть</span>
+                  </button>
+                </div>
+                <p class="projects__price">от 18 300 ₽</p>
+                <button type="button" class="projects__btn-send price-calculation">Расчет за 3
+                  минуты</button>
+              </div>
+
+              <div class="projects__carousel">
+                <div class="projects__wrap-carl">
+                  <button class="projects__btn-left">
+                    <svg width="30" height="190" viewBox="0 0 30 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Group 11">
+                        <path id="Vector 84" d="M28.8176 1C28.8176 2.99059 10.9392 63.298 2 95L28.8176 189"
+                          stroke="white" stroke-width="2" />
+                      </g>
+                    </svg>
+                  </button>
+                  <ul class="projects__slider">
+                    <li class="projects__item">
+                      <img src="./images/project/partition1.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/partition2.webp" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/partition3.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/partition4.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/partition5.jpg" alt="picture">
+                    </li>
+                  </ul>
+                  <button class="projects__btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="190" viewBox="0 0 30 190" fill="none">
+                      <path d="M0.999979 1C0.999979 2.99059 18.8784 63.298 27.8176 95L0.999979 189" stroke="white"
+                        stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+                <ul class="projects__box-dot d2"><!-- create in js --></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-mobile650">
+            <h3 class="projects-mobile650__h3 title-h3">Встроенные шкафы</h3>
+            <div class="projects__inner">
+              <div class="projects__content">
+                <h3 class="projects__h3 title-h3">Встроенные шкафы</h3>
+                <div class="projects-mobile650__btn-box">
+                  <button class="projects-mobile650__btn-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16" viewBox="0 0 77 16" fill="none">
+                      <path
+                        d="M75.5 7C76.0523 7 76.5 7.44772 76.5 8C76.5 8.55228 76.0523 9 75.5 9V7ZM0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM75.5 9H1V7H75.5V9Z"
+                        fill="#004765" />
+                    </svg>
+                  </button>
+                  <div class="projects-mobile650__count">
+                    <span>01</span>/
+                    <span>03</span>
+                  </div>
+                  <button class="projects-mobile650__btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="77" height="16" viewBox="0 0 77 16" fill="none">
+                      <path
+                        d="M1.5 7C0.947715 7 0.5 7.44772 0.5 8C0.5 8.55228 0.947715 9 1.5 9V7ZM76.7071 8.70711C77.0976 8.31658 77.0976 7.68342 76.7071 7.29289L70.3431 0.928932C69.9526 0.538408 69.3195 0.538408 68.9289 0.928932C68.5384 1.31946 68.5384 1.95262 68.9289 2.34315L74.5858 8L68.9289 13.6569C68.5384 14.0474 68.5384 14.6805 68.9289 15.0711C69.3195 15.4616 69.9526 15.4616 70.3431 15.0711L76.7071 8.70711ZM1.5 9H76V7H1.5V9Z"
+                        fill="#004765" />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <h4 class="projects__h4 title-h4">Проект на Лунчарского</h4>
+                  <p class="projects__text">
+                    Успешно реализован проект фасада встроенного шкафа-купе. Двери (3шт.) в профиле
+                    ТЕТРИС "Черный матовый" со вставками из зеркала и ЛДСП цвета "Белый" с
+                    горизонтальными делителями.
+                  </p>
+                  <button class="projects__text-open">
+                    <b>Читать полностью</b>
+                    <span>Свернуть</span>
+                  </button>
+                </div>
+                <p class="projects__price">от 14 200 ₽</p>
+                <button type="button" class="projects__btn-send price-calculation">Расчет за 3
+                  минуты</button>
+              </div>
+
+              <div class="projects__carousel">
+                <div class="projects__wrap-carl">
+                  <button class="projects__btn-left">
+                    <svg width="30" height="190" viewBox="0 0 30 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Group 11">
+                        <path id="Vector 84" d="M28.8176 1C28.8176 2.99059 10.9392 63.298 2 95L28.8176 189"
+                          stroke="white" stroke-width="2" />
+                      </g>
+                    </svg>
+                  </button>
+                  <ul class="projects__slider">
+                    <li class="projects__item">
+                      <img src="./images/project/closet1.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/closet2.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/closet3.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/closet4.webp" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/closet5.jpg" alt="picture">
+                    </li>
+                    <li class="projects__item">
+                      <img src="./images/project/closet6.webp" alt="picture">
+                    </li>
+                  </ul>
+                  <button class="projects__btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="190" viewBox="0 0 30 190" fill="none">
+                      <path d="M0.999979 1C0.999979 2.99059 18.8784 63.298 27.8176 95L0.999979 189" stroke="white"
+                        stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+                <ul class="projects__box-dot d3"><!-- create in js --></ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__inner">
+            <h2 class="title-h2">Почему мы?</h2>
+            <ul class="advantages__list">
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <path
+                      d="M40.9091 30H30.9091C30.407 30 30 29.593 30 29.0909V22.7273M50 30C50 41.0457 41.0457 50 30 50C18.9543 50 10 41.0457 10 30C10 18.9543 18.9543 10 30 10C41.0457 10 50 18.9543 50 30Z"
+                      stroke="#004765" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                  <h4 class="advantages__h4 title-h4">Скорость изготовления</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  Быстрое выполнение заказа. Заказать двери купе у нас просто и быстро. Мы готовы изготовить и доставить
+                  двери купе в СПб в течение 1-5 рабочих дней. Самый быстрый заказ мы реализовали за 4 часа от момента
+                  сметы
+                  до установки.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <img src="./images/calc-slider-door/wrench.svg" alt="icon">
+                  <h4 class="advantages__h4 title-h4">Монтаж в день доставки</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  Наши специалисты привезут материалы на фирменном автомобиле. Установят в этот же день с максимальной
+                  точностью и аккуратностью. А в конце уберут за собой весь мусор и выдадут документы и гарантийный
+                  талон.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <img src="./images/intro/calc.svg" alt="icon">
+                  <h4 class="advantages__h4 title-h4">Калькулятор стоимости прямо на сайте</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  Наш онлайн калькулятор дверей купе поможет вам самостоятельно рассчитать стоимость заказа до рубля. Им
+                  пользуются проффесиональные сметчики.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <img src="./images/calc-slider-door/gear.svg" alt="icon">
+                  <h4 class="advantages__h4 title-h4">Собственное производство</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  На своем производстве в СПб мы изготавливаем двери купе на заказ только из высококачественных
+                  материалов. Это значит, что вы не будете переплачивать посредникам, так как мы являемся
+                  производителем.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <path
+                      d="M37.5 25L28.3839 34.1161C27.8957 34.6043 27.1043 34.6043 26.6161 34.1161L22.5 30M18.9583 7.5H41.0417C41.8471 7.5 42.5 8.15292 42.5 8.95833C42.5 12.9854 45.7646 16.25 49.7917 16.25H50.8333C51.7538 16.25 52.5 16.9962 52.5 17.9167V20.0632C52.5 33.9114 44.9922 46.671 32.8867 53.3963L31.9411 53.9216C30.7339 54.5923 29.2661 54.5923 28.0589 53.9216L27.1133 53.3963C15.0078 46.671 7.5 33.9114 7.5 20.0632V17.9167C7.5 16.9962 8.24619 16.25 9.16667 16.25H10.2083C14.2354 16.25 17.5 12.9854 17.5 8.95833C17.5 8.15292 18.1529 7.5 18.9583 7.5Z"
+                      stroke="#004765" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                  <h4 class="advantages__h4 title-h4">Гарантия 1 год (честная)</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  Мы не будем выяснять причины поломки, а просто приедем и отремонтируем бесплатно. 1 год, но честно!
+                  Так как, если за 1 год ничего не случилось, наши двери будут работать до 7 лет. Гарантия
+                  распространяется на всё.
+                </p>
+              </li>
+            </ul>
+            <button type="submit" data-modal class="projects__btn-send advantages__btn-send">Вызвать замерщика</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/order-call.js"></script>
+  <script src="./js/price-calc.js"></script>
+  <script src="./js/price-calc-popup.js"></script>
+  <script src="./js/price-calc-closet.js"></script>
+  <script src="./js/intro.js"></script>
+  <script src="./js/spoller.js"></script>
+  <script src="./js/project-slid.js"></script>
+  <script src="./js/project.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 

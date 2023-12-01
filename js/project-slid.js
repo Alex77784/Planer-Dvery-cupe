@@ -3,9 +3,9 @@ let btnsL = document.querySelectorAll('.projects__btn-left');
 let btnsR = document.querySelectorAll('.projects__btn-right');
 let boxDots = document.querySelectorAll('.projects__box-dot');
 let locationSlider = {
-    lockSl1: 0,
-    lockSl2: 0,
-    lockSl3: 0,
+    'lockSl1': 0,
+    'lockSl2': 0,
+    'lockSl3': 0,
 };
 
 for (let i = 0; i < sliders.length; i++) {
@@ -33,19 +33,14 @@ function moveL() {
     let parent = this.parentElement.children;
     let holderDots = this.parentElement.nextElementSibling;
 
-    if (holderDots.matches('.d1')) {
-        if (locationSlider.lockSl1 > 0) { locationSlider.lockSl1-- };
-        [...holderDots.children].forEach(dot => dot.classList.remove('active'));
-        [...holderDots.children][locationSlider.lockSl1].classList.add('active');
-    } else if (holderDots.matches('.d2')) {
-        if (locationSlider.lockSl2 > 0) { locationSlider.lockSl2-- };
-        [...holderDots.children].forEach(dot => dot.classList.remove('active'));
-        [...holderDots.children][locationSlider.lockSl2].classList.add('active');
-    } else if (holderDots.matches('.d3')) {
-        if (locationSlider.lockSl3 > 0) { locationSlider.lockSl3-- };
-        [...holderDots.children].forEach(dot => dot.classList.remove('active'));
-        [...holderDots.children][locationSlider.lockSl3].classList.add('active');
-    };
+    for (let i = 1; i <= 3; i++) {
+        if (holderDots.matches('.d' + i)) {
+            if (locationSlider['lockSl' + i] > 0) { locationSlider['lockSl' + i]-- };
+            [...holderDots.children].forEach(dot => dot.classList.remove('active'));
+            [...holderDots.children][locationSlider['lockSl' + i]].classList.add('active');
+        }
+    }
+
     parent[1].scrollBy(-parent[1].offsetWidth, 0);
 }
 
@@ -53,19 +48,13 @@ function moveR() {
     let parent = this.parentElement.children;
     let holderDots = this.parentElement.nextElementSibling;
 
-    if (holderDots.matches('.d1')) {
-        if (parent[1].children.length - 1 != locationSlider.lockSl1) { locationSlider.lockSl1++ };
-        [...holderDots.children].forEach(dot => dot.classList.remove('active'));
-        [...holderDots.children][locationSlider.lockSl1].classList.add('active');
-    } else if (holderDots.matches('.d2')) {
-        if (parent[1].children.length - 1 != locationSlider.lockSl2) { locationSlider.lockSl2++ };
-        [...holderDots.children].forEach(dot => dot.classList.remove('active'));
-        [...holderDots.children][locationSlider.lockSl2].classList.add('active');
-    } else if (holderDots.matches('.d3')) {
-        if (parent[1].children.length - 1 != locationSlider.lockSl3) { locationSlider.lockSl3++ };
-        [...holderDots.children].forEach(dot => dot.classList.remove('active'));
-        [...holderDots.children][locationSlider.lockSl3].classList.add('active');
-    };
+    for (let i = 1; i <= 3; i++) {
+        if (holderDots.matches('.d' + i)) {
+            if (parent[1].children.length - 1 != locationSlider['lockSl' + i]) { locationSlider['lockSl' + i]++ };
+            [...holderDots.children].forEach(dot => dot.classList.remove('active'));
+            [...holderDots.children][locationSlider['lockSl' + i]].classList.add('active');
+        }
+    }
 
     parent[1].scrollBy(parent[1].offsetWidth, 0);
 }
@@ -73,48 +62,17 @@ function moveR() {
 function toggleByDots(event) {
     let slidDot = event.currentTarget.previousElementSibling.children[1];
 
-
-    for (let i = 1; i < 3; i++) {
+    for (let i = 1; i <= 3; i++) {
         if (event.currentTarget.matches('.d' + i) && event.target.closest('.projects__dot')) {
-            // [...event.currentTarget.children].forEach(dot => dot.classList.remove('active'));
-            // event.target.classList.add('active');
+            [...event.currentTarget.children].forEach(dot => dot.classList.remove('active'));
+            event.target.classList.add('active');
 
-            // [...event.currentTarget.children].forEach((el, ind) => {
-            //     if (el.classList.contains('active')) { locationSlider.lockSl1 = ind; }
-            // })
+            [...event.currentTarget.children].forEach((el, ind) => {
+                if (el.classList.contains('active')) { locationSlider['lockSl' + i] = ind; }
+            })
 
-            // slidDot.scrollTo((slidDot.offsetWidth) * locationSlider.lockSl1, 0);
+            slidDot.scrollTo((slidDot.offsetWidth) * locationSlider['lockSl' + i], 0);
         }
-        console.log(111)
-    }
-
-    if (event.currentTarget.matches('.d1') && event.target.closest('.projects__dot')) {
-        [...event.currentTarget.children].forEach(dot => dot.classList.remove('active'));
-        event.target.classList.add('active');
-
-        [...event.currentTarget.children].forEach((el, ind) => {
-            if (el.classList.contains('active')) { locationSlider.lockSl1 = ind; }
-        })
-
-        slidDot.scrollTo((slidDot.offsetWidth) * locationSlider.lockSl1, 0);
-    } else if (event.currentTarget.matches('.d2') && event.target.closest('.projects__dot')) {
-        [...event.currentTarget.children].forEach(dot => dot.classList.remove('active'));
-        event.target.classList.add('active');
-
-        [...event.currentTarget.children].forEach((el, ind) => {
-            if (el.classList.contains('active')) { locationSlider.lockSl2 = ind; }
-        })
-
-        slidDot.scrollTo((slidDot.offsetWidth) * locationSlider.lockSl2, 0);
-    } else if (event.currentTarget.matches('.d3') && event.target.closest('.projects__dot')) {
-        [...event.currentTarget.children].forEach(dot => dot.classList.remove('active'));
-        event.target.classList.add('active');
-
-        [...event.currentTarget.children].forEach((el, ind) => {
-            if (el.classList.contains('active')) { locationSlider.lockSl3 = ind; }
-        })
-
-        slidDot.scrollTo((slidDot.offsetWidth) * locationSlider.lockSl3, 0);
     }
 }
 
