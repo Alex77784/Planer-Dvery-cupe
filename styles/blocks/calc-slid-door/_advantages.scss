@@ -1,72 +1,70 @@
 .calc-slider-door {
 
-    &__list-part1,
-    &__list-part2 {
-        display: flex;
+  &__list-part1,
+  &__list-part2 {
+    display: flex;
 
-        border-radius: 20px;
-        background: $white;
-        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+    @extend %white-block;
 
-        @include media-width1180 {
-            flex-wrap: wrap;
-        }
-
-        @include media-width650 {
-            border-radius: 0;
-            background: transparent;
-            box-shadow: none;
-        }
-
-        @include media-width425 {
-            display: none;
-        }
+    @include media-width1180 {
+      flex-wrap: wrap;
     }
 
-    &__item-p1,
-    &__item-p2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1 0 auto;
-
-        font-size: 20px;
-        line-height: 1.5;
-        padding: 40px 0;
-
-        @media (max-width:1300px) {
-            font-size: 17px;
-        }
-
-        @include media-width1180 {
-            flex: 1 0 50%;
-            font-size: 20px;
-        }
-
-        @include media-width767 {
-            flex: 1 0 80%;
-            justify-content: stretch;
-
-            padding: 20px 0;
-            margin-left: 50px;
-        }
-
-        &>p {
-            margin-left: 20px;
-        }
+    @include media-width650 {
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
     }
 
-    &__list-part2 {
-        @include media-width425 {
-            display: block;
-        }
+    @include media-width425 {
+      display: none;
+    }
+  }
+
+  &__item-p1,
+  &__item-p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 40px 0;
+
+    @media (max-width:1300px) {
+      font-size: 17px;
     }
 
-    &__item-p2 {
-        @include media-width425 {
-            margin-left: 0;
-            font-size: 18px;
-            line-height: 1.5;
-        }
+    @include media-width1180 {
+      flex: 1 0 50%;
+      font-size: 20px;
     }
+
+    @include media-width767 {
+      flex: 1 0 80%;
+      justify-content: stretch;
+
+      padding: 20px 0;
+      margin-left: 50px;
+    }
+
+    &>p {
+      margin-left: 20px;
+    }
+  }
+
+  &__list-part2 {
+    @include media-width425 {
+      display: block;
+    }
+  }
+
+  &__item-p2 {
+    @include media-width425 {
+      margin-left: 0;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
 }

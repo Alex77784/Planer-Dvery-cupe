@@ -1,0 +1,132 @@
+.modal-show-photo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  padding: 5px 15px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__bd-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+  }
+
+  &__button-close {
+    display: none;
+
+    @include media-width650 {
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 35px;
+      height: 35px;
+
+      background-color: #ffffff48;
+      border: 1px solid $main-blue;
+      border-radius: 50%;
+      color: $main-blue;
+      font-size: 25px;
+    }
+  }
+
+  &__window-dialog {
+    position: relative;
+    z-index: 12;
+    max-width: 590px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  // carousel
+  &__wrap-carl {
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+
+    overflow: hidden;
+  }
+
+  &__btn-left,
+  &__btn-right {
+    position: fixed;
+    top: 50%;
+    background-color: transparent;
+
+    transform: translateY(-50%);
+    transition: $transition;
+
+    @include media-width650 {
+      display: none;
+    }
+
+    &:hover {
+      transform: translateY(-50%) scale(1.1);
+    }
+  }
+
+  &__btn-left {
+    left: 100px;
+  }
+
+  &__btn-right {
+    right: 100px;
+  }
+
+
+  &__slider {
+    display: flex;
+    width: 450px;
+    background: #FFF;
+
+    overflow: auto;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include media-width1420 {
+      width: 350px;
+    }
+
+    @include media-width425 {
+      width: 290px;
+    }
+  }
+
+  &__item {
+    min-width: 450px;
+    height: 700px;
+
+    @include media-width1420 {
+      height: 95vh;
+      min-width: 350px;
+    }
+
+    @include media-width425 {
+      min-width: 290px;
+    }
+
+    &>img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

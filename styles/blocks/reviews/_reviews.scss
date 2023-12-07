@@ -1,0 +1,99 @@
+.reviews {
+  padding: 100px 0;
+
+  @include media-width767 {
+    padding: 40px 0;
+  }
+
+  &__box-ya-assessment {
+    max-width: 350px;
+    @extend %white-block;
+
+    margin: 0 auto 20px;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    @include media-width570 {
+      justify-content: space-around;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+
+  &__ya-name {
+    color: black;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -2px;
+
+    &::first-letter {
+      color: red;
+    }
+
+    @include media-width570 {
+      font-size: 28px;
+    }
+  }
+
+  &__ya-assessment {
+    text-align: center;
+
+    &>span {
+      color: $main-black;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  &__quote {
+    max-width: 350px;
+    margin: 0 auto 40px;
+    color: $main-black;
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__ya-link {
+    text-align: center;
+    margin-bottom: 25px;
+
+    &>a {
+      color: $main-blue;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      text-decoration-line: underline;
+      transition: $transition;
+
+      &:hover {
+        display: inline-block;
+        text-shadow: 1px 1px $main-blue;
+      }
+    }
+  }
+}
+
+
+.assess {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+
+  &>span {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 120%;
+
+    @include media-width570 {
+      font-size: 26px;
+    }
+  }
+}

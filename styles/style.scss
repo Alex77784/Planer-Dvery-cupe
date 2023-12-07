@@ -5,6 +5,7 @@
 @import './base/_base';
 @import './blocks/popup/_popup';
 @import './blocks/popup/_price-calc-popup';
+@import './blocks/popup/_show-of-photo';
 @import './blocks/spoller/_spoller';
 //------------------------------
 @import './blocks/header/_header';
@@ -25,6 +26,9 @@
 @import './blocks/project/_prot-descr';
 
 @import './blocks/advantages/_advantages';
+
+@import './blocks/reviews/_reviews';
+@import './blocks/reviews/_cards';
 
 @import './blocks/footer/_footer';
 

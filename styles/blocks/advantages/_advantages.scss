@@ -22,9 +22,7 @@
     width: 31%;
     padding: 40px;
 
-    border-radius: 20px;
-    background: $white;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+    @extend %white-block;
 
     @media (max-width:1195px) {
       width: 47%;
