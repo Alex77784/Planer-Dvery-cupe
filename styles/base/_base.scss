@@ -34,14 +34,14 @@ body {
 
 .title-h3 {
   color: $main-blue;
-  font-size: 36px;
+  @include adaptive-font(24, 34);
   font-weight: 500;
   line-height: 1.2;
 }
 
 .title-h4 {
   color: $main-blue;
-  font-size: 22px;
+  @include adaptive-font(18, 22);
   font-weight: 500;
   line-height: 1.2;
 }

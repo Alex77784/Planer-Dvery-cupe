@@ -1,0 +1,70 @@
+.stages-of-works {
+  padding: 100px 0;
+
+  @include media-width992 {
+    padding: 60px 0;
+  }
+
+  @include media-width767 {
+    padding: 40px 0;
+  }
+
+  &__card {
+    max-width: 480px;
+    width: 100%;
+    padding: 0 40px;
+    text-align: center;
+
+    @include media-width425 {
+      display: flex;
+      width: 315px;
+      padding: 20px 20px 5px 20px;
+
+      border-radius: 20px;
+      background: #FFF;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08);
+
+      @include media-width425 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+    }
+  }
+
+  &__holder-titles {
+
+    @include media-width425 {
+      justify-content: space-between;
+    }
+  }
+
+  &__h3 {
+    margin-bottom: 20px;
+
+    @include media-width425 {
+      display: none;
+    }
+  }
+
+  &__h4 {
+    margin-bottom: 12px;
+
+    @include media-width425 {
+      display: none;
+    }
+  }
+
+  &__mobile-h4 {
+    display: none;
+
+    @include media-width425 {
+      display: block;
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    font-size: 20px;
+  }
+}

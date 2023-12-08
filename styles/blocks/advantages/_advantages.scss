@@ -1,8 +1,12 @@
 .advantages {
-  &__inner {
-    @include media-width767 {
-      padding: 20px 0;
-    }
+  padding: 100px 0;
+
+  @include media-width992 {
+    padding: 60px 0;
+  }
+
+  @include media-width767 {
+    padding: 40px 0;
   }
 
   &__list {
@@ -10,7 +14,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     @include media-width992 {
       gap: 25px;
