@@ -4,7 +4,9 @@ let boxText = document.querySelector('.spoller__box-text');
 btnSpoller.forEach(elt => elt.addEventListener('click', toggleSpoller));
 function toggleSpoller(evt) {
   let text = evt.target.parentElement.nextElementSibling;
+  let backgroundBlue = evt.target.parentElement.parentElement;
   this.classList.toggle('active');
+  backgroundBlue.classList.toggle('active');
 
   if (this.classList.contains('active')) {
     boxText.style.maxHeight = boxText.scrollHeight + 'px';

@@ -8,6 +8,10 @@
   @include media-width767 {
     padding: 40px 0 0;
   }
+
+  @include media-width425 {
+    padding: 0;
+  }
 }
 
 .intro {
