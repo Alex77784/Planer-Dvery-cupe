@@ -1,0 +1,73 @@
+.pre-footer {
+  background-color: #C6E1EC;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 5%;
+
+    @include media-width1180 {
+      gap: 2.2%;
+    }
+
+    @include media-width992 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      justify-items: center;
+      gap: 35px 0;
+    }
+
+    @include media-width767 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__appeal {
+    color: $main-blue;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 380px;
+
+    @include media-width992 {
+      grid-column: 1/3;
+      border-bottom: 3px solid $main-blue;
+
+      width: 100%;
+      padding: 0 0 20px 0;
+      text-align: center;
+    }
+
+    @include media-width425 {
+      display: none;
+    }
+  }
+
+  &__contain-img {
+    transform: rotate(10deg);
+
+    @include media-width767 {
+      display: none;
+    }
+  }
+
+  &__like {
+    color: $main-black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__btn-send {
+    font-size: 19px;
+
+    @include media-width992 {
+      padding: 30px 20px;
+    }
+  }
+}

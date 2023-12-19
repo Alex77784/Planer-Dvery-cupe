@@ -1,0 +1,86 @@
+.contacts {
+  padding: 100px 0;
+
+  @include media-width992 {
+    padding: 60px 0;
+  }
+
+  &__inner {
+    max-width: 1215px;
+    margin: 0 auto;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: minmax(500px, 750px) 365px;
+    justify-content: center;
+    align-items: start;
+    gap: 20px 100px;
+
+    @include media-width1180 {
+      grid-template-columns: minmax(300px, 750px);
+      gap: 40px;
+    }
+  }
+
+  &__map {
+    height: 506px;
+
+    @include media-width1180 {
+      grid-row: 2/3;
+    }
+
+    @include media-width570 {
+      height: 350px;
+    }
+  }
+
+  &__discr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+
+    @include media-width1180 {
+      gap: 20px;
+    }
+  }
+
+  &__holder-owner-data {
+
+    @include media-width425 {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @include media-width1180 {
+      grid-row: 3/4;
+    }
+  }
+
+  &__link {
+    gap: 12px;
+    color: $main-blue;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__confidentially,
+  &__address,
+  &__owner-data {
+    color: $main-black;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  &__confidentially {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-top: 20px;
+  }
+}
