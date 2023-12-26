@@ -1,139 +1,137 @@
 .projects {
-    // &__carousel {}
+  &__wrap-carl {
+    display: flex;
+    position: relative;
 
-    &__wrap-carl {
-        display: flex;
-        position: relative;
+    margin-bottom: 20px;
+    border-radius: 20px;
 
-        margin-bottom: 20px;
-        border-radius: 20px;
+    overflow: hidden;
 
-        overflow: hidden;
+    @include media-width650 {
+      margin: 20px 0;
+    }
+  }
 
-        @include media-width650 {
-            margin: 20px 0;
-        }
+  &__btn-left,
+  &__btn-right {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+
+    transform: translateY(-50%);
+    transition: $transition;
+
+    @include media-width650 {
+      display: none;
     }
 
-    &__btn-left,
-    &__btn-right {
-        position: absolute;
-        top: 50%;
-        background-color: transparent;
+    &:hover {
+      transform: translateY(-50%) scale(1.1);
+    }
+  }
 
-        transform: translateY(-50%);
-        transition: $transition;
+  &__btn-left {
+    left: 20px;
+  }
 
-        @include media-width650 {
-            display: none;
-        }
+  &__btn-right {
+    right: 20px;
+  }
 
-        &:hover {
-            transform: translateY(-50%) scale(1.1);
-        }
+
+  &__slider {
+    display: flex;
+    width: 850px;
+    background: #FFF;
+
+    overflow: auto;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
     }
 
-    &__btn-left {
-        left: 20px;
+    @include media-width992 {
+      width: 700px;
     }
 
-    &__btn-right {
-        right: 20px;
+    @include media-width767 {
+      width: 600px;
     }
 
-
-    &__slider {
-        display: flex;
-        width: 850px;
-        background: #FFF;
-
-        overflow: auto;
-        scroll-behavior: smooth;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-        @include media-width992 {
-            width: 700px;
-        }
-
-        @include media-width767 {
-            width: 600px;
-        }
-
-        @include media-width650 {
-            width: 500px;
-        }
-
-        @include media-width570 {
-            width: 350px;
-        }
-
-        @include media-width425 {
-            width: 275px;
-        }
+    @include media-width650 {
+      width: 500px;
     }
 
-    &__item {
-        min-width: 850px;
-        height: 485px;
-
-        @include media-width992 {
-            min-width: 700px;
-        }
-
-        @include media-width767 {
-            min-width: 600px;
-            height: 435px;
-        }
-
-        @include media-width650 {
-            min-width: 500px;
-            height: 350px;
-        }
-
-        @include media-width570 {
-            min-width: 350px;
-            height: 210px;
-        }
-
-        @include media-width425 {
-            min-width: 275px;
-            height: 210px;
-        }
-
-        &>img {
-            width: 100%;
-            height: 100%;
-        }
+    @include media-width570 {
+      width: 350px;
     }
 
-    &__box-dot {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
-        gap: 7px;
+    @include media-width425 {
+      width: 275px;
+    }
+  }
 
-        @include media-width650 {
-            display: none;
-        }
+  &__item {
+    min-width: 850px;
+    height: 485px;
+
+    @include media-width992 {
+      min-width: 700px;
     }
 
-    &__dot {
-        width: 12px;
-        height: 12px;
-        background-color: $light-gray;
-        border-radius: 50%;
-        transition: $transition;
-
-        &.active {
-            background-color: $main-blue;
-        }
-
-        &:hover:not(.projects__dot.active) {
-            transform: scale(1.3);
-        }
+    @include media-width767 {
+      min-width: 600px;
+      height: 435px;
     }
+
+    @include media-width650 {
+      min-width: 500px;
+      height: 350px;
+    }
+
+    @include media-width570 {
+      min-width: 350px;
+      height: 210px;
+    }
+
+    @include media-width425 {
+      min-width: 275px;
+      height: 210px;
+    }
+
+    &>img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__box-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 7px;
+
+    @include media-width650 {
+      display: none;
+    }
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    background-color: $light-gray;
+    border-radius: 50%;
+    transition: $transition;
+
+    &.active {
+      background-color: $main-blue;
+    }
+
+    &:hover:not(.projects__dot.active) {
+      transform: scale(1.3);
+    }
+  }
 }

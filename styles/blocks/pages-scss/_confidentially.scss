@@ -1,0 +1,23 @@
+.text2 {
+  font-family: serif;
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.bredcrumbs {
+  display: flex;
+
+  @media (max-width:425px) {
+    display: none;
+  }
+}
+
+.bredcrumbs>li {
+  color: #999;
+}
+
+.bredcrumbs>li>a {
+  color: #606060;
+  text-decoration: underline;
+}

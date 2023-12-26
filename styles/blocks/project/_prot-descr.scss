@@ -1,4 +1,10 @@
 .projects {
+  padding: 0 0 100px 0;
+
+  @include media-width992 {
+    padding: 0 0 60px 0;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;

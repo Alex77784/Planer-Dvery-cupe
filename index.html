@@ -18,15 +18,15 @@
           <a href="#" class="header__logo">
             <img src="./images/header/logo.svg" alt="logo">
           </a>
-          <a href="#" class="header__address">
+          <a href="#map" class="header__address">
             г. Санкт-Петербург, пр. Елизарова, <br>
             дом 34/2 (лит.Л), 3 этаж, офис 346
           </a>
           <ul class="contacts-list">
-            <li><a href="#" class="contacts-list__link">
+            <li><a href="https://telegram.org/" target="_blank" class="contacts-list__link">
                 <img src="./images/header/telegram.svg" alt="icon">
                 <span class="contacts-list__mobile-hide">Telegram</span></a></li>
-            <li><a href="#" class="contacts-list__link">
+            <li><a href="https://wa.me/79006346886" target="_blank" class="contacts-list__link">
                 <img src="./images/header/watsap.svg" alt="icon">
                 <span class="contacts-list__mobile-hide">Whatsapp</span></a></li>
             <li><a href="tel:+78123469043" class="contacts-list__link">
@@ -41,19 +41,19 @@
       <div class="header-mobile box-nav-fixed">
         <div class="container">
           <nav class="box-nav-fixed__nav">
-            <a href="#">
+            <a href="index.html">
               <img src="./images/header/mobil/home.svg" alt="home">
               Главная
             </a>
-            <a href="#">
+            <a href="#calculation">
               <img src="./images/header/mobil/calc.svg" alt="calc">
               Калькулятор
             </a>
-            <a href="#">
+            <a href="#door">
               <img src="./images/header/mobil/baggage.svg" alt="projects">
               Проекты
             </a>
-            <a href="#">
+            <a href="#map">
               <img src="./images/header/mobil/location.svg" alt="contacts">
               Контакты
             </a>
@@ -68,13 +68,13 @@
             <!-- start inner -->
             <article class="intro__col-content">
               <div class="intro__box-titles">
-                <a href="#" class="intro__title-h3">
+                <a href="#closet" class="intro__title-h3">
                   <h3 data-title3="closet">Шкафы купе</h3>
                 </a>
-                <a href="#" class="intro__title-h3">
+                <a href="#door" class="intro__title-h3">
                   <h3 data-title3="slidin-door">Раздвижные двери</h3>
                 </a>
-                <a href="#" class="intro__title-h3">
+                <a href="#partitions" class="intro__title-h3">
                   <h3 data-title3="partition">
                     Межкомнатные <br>
                     перегородки
@@ -100,10 +100,10 @@
                       <span>от</span>
                       8.000 ₽
                     </p>
-                    <a href="#" class="intro__project-link">Проекты</a>
+                    <a href="#closet" class="intro__project-link">Проекты</a>
                   </div>
                 </div>
-                <a href="#" class="intro__calculation">
+                <a href="#calculation" class="intro__calculation">
                   <img src="./images/intro/calc.svg" alt="calc">
                   <h4 class="intro__calc-title">
                     КАЛЬКУЛЯТОР
@@ -123,7 +123,7 @@
                       <span>от</span>
                       12.000 ₽
                     </p>
-                    <a href="#" class="intro__project-link">Проекты</a>
+                    <a href="#door" class="intro__project-link">Проекты</a>
                   </div>
                 </div>
                 <div data-card="partition" class="intro__box-product col2">
@@ -137,7 +137,7 @@
                       <span>от</span>
                       16.000 ₽
                     </p>
-                    <a href="#" class="intro__project-link">Проекты</a>
+                    <a href="#partitions" class="intro__project-link">Проекты</a>
                   </div>
                 </div>
               </div>
@@ -170,9 +170,87 @@
           </div>
         </div>
       </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__inner" id="advantages">
+            <h2 class="title-h2">Почему мы?</h2>
+            <ul class="advantages__list">
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <path
+                      d="M40.9091 30H30.9091C30.407 30 30 29.593 30 29.0909V22.7273M50 30C50 41.0457 41.0457 50 30 50C18.9543 50 10 41.0457 10 30C10 18.9543 18.9543 10 30 10C41.0457 10 50 18.9543 50 30Z"
+                      stroke="#004765" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                  <h4 class="advantages__h4 title-h4">Скорость изготовления</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  Быстрое выполнение заказа. Заказать двери купе у нас просто и быстро. Мы готовы изготовить и доставить
+                  двери купе в СПб в течение 1-5 рабочих дней. Самый быстрый заказ мы реализовали за 4 часа от момента
+                  сметы
+                  до установки.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <img src="./images/calc-slider-door/wrench.svg" alt="icon">
+                  <h4 class="advantages__h4 title-h4">Монтаж в день доставки</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  Наши специалисты привезут материалы на фирменном автомобиле. Установят в этот же день с максимальной
+                  точностью и аккуратностью. А в конце уберут за собой весь мусор и выдадут документы и гарантийный
+                  талон.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <img src="./images/intro/calc.svg" alt="icon">
+                  <h4 class="advantages__h4 title-h4">Калькулятор стоимости прямо на сайте</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  Наш онлайн калькулятор дверей купе поможет вам самостоятельно рассчитать стоимость заказа до рубля. Им
+                  пользуются проффесиональные сметчики.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <img src="./images/calc-slider-door/gear.svg" alt="icon">
+                  <h4 class="advantages__h4 title-h4">Собственное производство</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  На своем производстве в СПб мы изготавливаем двери купе на заказ только из высококачественных
+                  материалов. Это значит, что вы не будете переплачивать посредникам, так как мы являемся
+                  производителем.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <div class="advantages__row-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <path
+                      d="M37.5 25L28.3839 34.1161C27.8957 34.6043 27.1043 34.6043 26.6161 34.1161L22.5 30M18.9583 7.5H41.0417C41.8471 7.5 42.5 8.15292 42.5 8.95833C42.5 12.9854 45.7646 16.25 49.7917 16.25H50.8333C51.7538 16.25 52.5 16.9962 52.5 17.9167V20.0632C52.5 33.9114 44.9922 46.671 32.8867 53.3963L31.9411 53.9216C30.7339 54.5923 29.2661 54.5923 28.0589 53.9216L27.1133 53.3963C15.0078 46.671 7.5 33.9114 7.5 20.0632V17.9167C7.5 16.9962 8.24619 16.25 9.16667 16.25H10.2083C14.2354 16.25 17.5 12.9854 17.5 8.95833C17.5 8.15292 18.1529 7.5 18.9583 7.5Z"
+                      stroke="#004765" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                  <h4 class="advantages__h4 title-h4">Гарантия 1 год (честная)</h4>
+                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
+                </div>
+                <p class="advantages__text">
+                  Мы не будем выяснять причины поломки, а просто приедем и отремонтируем бесплатно. 1 год, но честно!
+                  Так как, если за 1 год ничего не случилось, наши двери будут работать до 7 лет. Гарантия
+                  распространяется на всё.
+                </p>
+              </li>
+            </ul>
+            <button type="submit" data-modal class="projects__btn-send advantages__btn-send">Вызвать замерщика</button>
+          </div>
+        </div>
+      </section>
       <section class="calc-slider-door">
         <div class="container">
-          <ul class="calc-slider-door__list-part1">
+          <ul class="calc-slider-door__list-part1" id="advan">
             <li class="calc-slider-door__item-p1">
               <img src="./images/calc-slider-door/triangle.svg" alt="triangle">
               <p>Выезд замерщика <br> в течение 1 дня</p>
@@ -191,7 +269,7 @@
             </li>
           </ul>
           <div class="calc-slider-door__wrap">
-            <h2 class="title-h2 mb650">Калькулятор дверей-купе</h2>
+            <h2 class="title-h2 mb650" id="calculation">Калькулятор дверей-купе</h2>
             <div class="calc-slider-door__wto-cols">
               <div class="calc-slider-door__col1">
                 <h3 class="title-h4 none650">Габариты проема</h3>
@@ -343,7 +421,7 @@
       </section>
       <section class="projects">
         <div class="container">
-          <h2 class="projects__h2 title-h2">Наши проекты</h2>
+          <h2 class="projects__h2 title-h2" id="door">Наши проекты</h2>
 
           <div class="projects-mobile650">
             <h3 class="projects-mobile650__h3 title-h3">Двери купе</h3>
@@ -419,7 +497,7 @@
                     </svg>
                   </button>
                 </div>
-                <ul class="projects__box-dot d1"><!-- create in js --></ul>
+                <ul class="projects__box-dot d1" id="partitions"><!-- create in js --></ul>
               </div>
             </div>
           </div>
@@ -500,7 +578,7 @@
                     </svg>
                   </button>
                 </div>
-                <ul class="projects__box-dot d2"><!-- create in js --></ul>
+                <ul class="projects__box-dot d2" id="closet"><!-- create in js --></ul>
               </div>
             </div>
           </div>
@@ -591,87 +669,9 @@
 
         </div>
       </section>
-      <section class="advantages">
-        <div class="container">
-          <div class="advantages__inner">
-            <h2 class="title-h2">Почему мы?</h2>
-            <ul class="advantages__list">
-              <li class="advantages__card">
-                <div class="advantages__row-img">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <path
-                      d="M40.9091 30H30.9091C30.407 30 30 29.593 30 29.0909V22.7273M50 30C50 41.0457 41.0457 50 30 50C18.9543 50 10 41.0457 10 30C10 18.9543 18.9543 10 30 10C41.0457 10 50 18.9543 50 30Z"
-                      stroke="#004765" stroke-width="3" stroke-linecap="round" />
-                  </svg>
-                  <h4 class="advantages__h4 title-h4">Скорость изготовления</h4>
-                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
-                </div>
-                <p class="advantages__text">
-                  Быстрое выполнение заказа. Заказать двери купе у нас просто и быстро. Мы готовы изготовить и доставить
-                  двери купе в СПб в течение 1-5 рабочих дней. Самый быстрый заказ мы реализовали за 4 часа от момента
-                  сметы
-                  до установки.
-                </p>
-              </li>
-              <li class="advantages__card">
-                <div class="advantages__row-img">
-                  <img src="./images/calc-slider-door/wrench.svg" alt="icon">
-                  <h4 class="advantages__h4 title-h4">Монтаж в день доставки</h4>
-                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
-                </div>
-                <p class="advantages__text">
-                  Наши специалисты привезут материалы на фирменном автомобиле. Установят в этот же день с максимальной
-                  точностью и аккуратностью. А в конце уберут за собой весь мусор и выдадут документы и гарантийный
-                  талон.
-                </p>
-              </li>
-              <li class="advantages__card">
-                <div class="advantages__row-img">
-                  <img src="./images/intro/calc.svg" alt="icon">
-                  <h4 class="advantages__h4 title-h4">Калькулятор стоимости прямо на сайте</h4>
-                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
-                </div>
-                <p class="advantages__text">
-                  Наш онлайн калькулятор дверей купе поможет вам самостоятельно рассчитать стоимость заказа до рубля. Им
-                  пользуются проффесиональные сметчики.
-                </p>
-              </li>
-              <li class="advantages__card">
-                <div class="advantages__row-img">
-                  <img src="./images/calc-slider-door/gear.svg" alt="icon">
-                  <h4 class="advantages__h4 title-h4">Собственное производство</h4>
-                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
-                </div>
-                <p class="advantages__text">
-                  На своем производстве в СПб мы изготавливаем двери купе на заказ только из высококачественных
-                  материалов. Это значит, что вы не будете переплачивать посредникам, так как мы являемся
-                  производителем.
-                </p>
-              </li>
-              <li class="advantages__card">
-                <div class="advantages__row-img">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <path
-                      d="M37.5 25L28.3839 34.1161C27.8957 34.6043 27.1043 34.6043 26.6161 34.1161L22.5 30M18.9583 7.5H41.0417C41.8471 7.5 42.5 8.15292 42.5 8.95833C42.5 12.9854 45.7646 16.25 49.7917 16.25H50.8333C51.7538 16.25 52.5 16.9962 52.5 17.9167V20.0632C52.5 33.9114 44.9922 46.671 32.8867 53.3963L31.9411 53.9216C30.7339 54.5923 29.2661 54.5923 28.0589 53.9216L27.1133 53.3963C15.0078 46.671 7.5 33.9114 7.5 20.0632V17.9167C7.5 16.9962 8.24619 16.25 9.16667 16.25H10.2083C14.2354 16.25 17.5 12.9854 17.5 8.95833C17.5 8.15292 18.1529 7.5 18.9583 7.5Z"
-                      stroke="#004765" stroke-width="3" stroke-linecap="round" />
-                  </svg>
-                  <h4 class="advantages__h4 title-h4">Гарантия 1 год (честная)</h4>
-                  <button class="spoller__btn-arrow advantages__hidden-btn"></button>
-                </div>
-                <p class="advantages__text">
-                  Мы не будем выяснять причины поломки, а просто приедем и отремонтируем бесплатно. 1 год, но честно!
-                  Так как, если за 1 год ничего не случилось, наши двери будут работать до 7 лет. Гарантия
-                  распространяется на всё.
-                </p>
-              </li>
-            </ul>
-            <button type="submit" data-modal class="projects__btn-send advantages__btn-send">Вызвать замерщика</button>
-          </div>
-        </div>
-      </section>
       <section class="reviews">
         <div class="container">
-          <h2 class="title-h2">Отзывы</h2>
+          <h2 class="title-h2" id="reviews">Отзывы</h2>
           <div class="reviews__inner">
             <div class="reviews__box-ya-assessment">
               <p class="reviews__ya-name">Яндекс</p>
@@ -813,7 +813,7 @@
       <section class="stages-of-works">
         <div class="container">
           <div class="stages-of-works__inner">
-            <h2 class="title-h2">Этапы работ</h2>
+            <h2 class="title-h2" id="stages-of-work">Этапы работ</h2>
             <ul class="advantages__list">
               <li class="stages-of-works__card">
                 <div class="advantages__row-img stages-of-works__holder-titles">
@@ -879,7 +879,7 @@
       </section>
       <section class="questions">
         <div class="container">
-          <div class="questions__inner">
+          <div class="questions__inner" id="questions">
             <h2 class="title-h2">Частые вопросы</h2>
             <div class="questions__lists">
               <ul class="questions__list">
@@ -1074,7 +1074,7 @@
       <section class="contacts">
         <div class="container">
           <div class="contacts__inner">
-            <h2 class="title-h2">Контакты</h2>
+            <h2 class="title-h2" id="map">Контакты</h2>
             <div class="contacts__box">
               <div class="contacts__map" style="position:relative;overflow:hidden;">
                 <a href="https://yandex.by/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
@@ -1086,10 +1086,10 @@
               </div>
               <div class="contacts__discr">
                 <ul class="contacts__list">
-                  <li><a href="#" class="contacts-list__link contacts__link">
+                  <li><a href="https://telegram.org/" target="_blank" class="contacts-list__link contacts__link">
                       <img src="./images/header/telegram.svg" alt="icon">
                       <span>Написать Telegram</span></a></li>
-                  <li><a href="#" class="contacts-list__link contacts__link">
+                  <li><a href="https://wa.me/79006346886" target="_blank" class="contacts-list__link contacts__link">
                       <img src="./images/header/watsap.svg" alt="icon">
                       <span>Написать Whatsapp</span></a></li>
                   <li><a href="tel:+78123469043" class="contacts-list__link contacts__link">
@@ -1113,10 +1113,9 @@
                 <p class="contacts__owner-data">ИП Беляев Михаил Владиславович <br> ОГРНИП/ИНН
                   308784725300048/781011963598
                 </p>
-                <a href="#" class="contacts__confidentially">Пользовательское соглашение</a>
+                <a href="./confidentially.htm" class="contacts__confidentially">Пользовательское соглашение</a>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -1150,31 +1149,31 @@
               </div>
               <ul class="footer__nav-list">
                 <li class="footer__nav-item">
-                  <a href="#">Преимущества</a>
+                  <a href="#advan">Преимущества</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#">Калькулятор дверей-купе </a>
+                  <a href="#calculation">Калькулятор дверей-купе </a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#">Наши работы</a>
+                  <a href="#door">Наши работы</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#">Почему мы</a>
+                  <a href="#advantages">Почему мы</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#">Отзывы</a>
+                  <a href="#reviews">Отзывы</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#">Этапы работ</a>
+                  <a href="#stages-of-work">Этапы работ</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#">Популярные модели</a>
+                  <a href="#door">Популярные модели</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#">Частые вопросы</a>
+                  <a href="#questions">Частые вопросы</a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#">Контакты</a>
+                  <a href="#map">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -1203,11 +1202,11 @@
               <li>
                 <button data-modal class="header__btn">Обратный звонок</button>
               </li>
-              <li><a href="#">
+              <li><a href="https://telegram.org/" target="_blank">
                   <img src="./images/header/telegram.svg" alt="icon">
                   <span>Telegram</span></a>
               </li>
-              <li><a href="#">
+              <li><a href="https://wa.me/79006346886" target="_blank">
                   <img src="./images/header/watsap.svg" alt="icon">
                   <span>Whatsapp</span></a>
               </li>
@@ -1215,9 +1214,8 @@
           </div>
         </div>
         <div class="footer__user-agree-box">
-          <a href="#">Политика конфиденциальности</a>
-          <a href="#">Пользовательское соглашение</a>
-          <a href="#">Публичная оферта</a>
+          <a href="./confidentially.htm">Политика конфиденциальности</a>
+          <a href="./user-agree.htm">Пользовательское соглашение</a>
         </div>
       </div>
     </footer>
@@ -1235,7 +1233,6 @@
   <script src="./js/contacts.js"></script>
   <script src="./js/pre-footer.js"></script>
   <script src="./js/footer.js"></script>
-  <script src="./js/script.js"></script>
 
 </body>
 

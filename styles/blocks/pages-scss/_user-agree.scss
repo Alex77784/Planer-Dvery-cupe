@@ -1,0 +1,54 @@
+.holder {
+  max-width: 1230px;
+  padding: 40px 15px;
+  margin: 0 auto;
+  color: black;
+}
+
+.h2 {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 25px 0;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.div {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.ul {
+  margin-bottom: 40px;
+}
+
+.li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  list-style: inside;
+  line-height: 1.5;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

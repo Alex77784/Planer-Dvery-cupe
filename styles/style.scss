@@ -8,6 +8,7 @@
 @import './blocks/popup/_show-of-photo';
 @import './blocks/spoller/_spoller';
 //------------------------------
+
 @import './blocks/header/_header';
 @import './blocks/header/_header-mobile';
 
@@ -42,6 +43,11 @@
 
 @import './blocks/footer/_footer';
 @import './blocks/footer/_footer-contact';
+
+//------------------------------
+
+@import './blocks/pages-scss/_user-agree';
+@import './blocks/pages-scss/_confidentially';
 
 .none {
   display: none;
